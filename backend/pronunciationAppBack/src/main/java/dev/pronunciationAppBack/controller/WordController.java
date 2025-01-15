@@ -1,13 +1,12 @@
-package dev.pronunciationAppBack;
+package dev.pronunciationAppBack.controller;
 
 
+import dev.pronunciationAppBack.model.Word;
+import dev.pronunciationAppBack.repository.WordRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
-
-
-import static org.antlr.v4.runtime.tree.xpath.XPath.findAll;
 
 @RestController
 public class WordController {

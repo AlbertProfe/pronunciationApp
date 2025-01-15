@@ -1,8 +1,14 @@
-package dev.pronunciationAppBack;
+package dev.pronunciationAppBack.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import lombok.*;
 
+@Getter
+@Setter
+@Data
+//@AllArgsConstructor
+//@NoArgsConstructor
 @Entity
 public class Word {
 
@@ -27,60 +33,8 @@ public class Word {
         this.level = level;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public String getWordName() {
-        return wordName;
-    }
-
-    public String getDefinition() {
-        return definition;
-    }
-
-    public String getPhoneticSpelling() {
-        return phoneticSpelling;
-    }
-
-    public String getSentence() {
-        return sentence;
-    }
-
-    public boolean isActive() {
-        return isActive;
-    }
-
-    public int getLevel() {
-        return level;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public void setWordName(String wordName) {
-        this.wordName = wordName;
-    }
-
-    public void setDefinition(String definition) {
-        this.definition = definition;
-    }
-
-    public void setPhoneticSpelling(String phoneticSpelling) {
-        this.phoneticSpelling = phoneticSpelling;
-    }
-
-    public void setSentence(String sentence) {
-        this.sentence = sentence;
-    }
-
     public void setActive(boolean active) {
         isActive = active;
-    }
-
-    public void setLevel(int level) {
-        this.level = level;
     }
 
     @Override
