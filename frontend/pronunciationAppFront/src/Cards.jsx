@@ -32,21 +32,21 @@ export default function WordList() {
           variant="h4"
           component="h1"
           gutterBottom
-          sx={{ color: "#F0F4F8" }}
+          sx={{ color: "#F0F4F8", textAlign: "left" }}
         >
-          Word List
+          Words:
         </Typography>
         <Grid container spacing={2}>
           {words.map((word) => (
             <Grid item xs={12} sm={6} md={4} key={word.id}>
               <Card
                 sx={{
-                  backgroundColor: "rgba(240, 244, 248, 0.1)",
+                  backgroundColor: "rgba(255, 255, 255, 0.25)",
                   backdropFilter: "blur(10px)",
                   boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
                   transition: "0.3s",
                   "&:hover": {
-                    transform: "translateY(-5px)",
+                    transform: "translate(5px, -5px)",
                     boxShadow: "0 6px 8px rgba(0, 0, 0, 0.15)",
                   },
                 }}
