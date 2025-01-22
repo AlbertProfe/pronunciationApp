@@ -1,0 +1,98 @@
+.user-container {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-card {
+    width: 100%;
+    max-width: 300px;
+    background: rgb(221, 218, 200) !important;
+    border-radius: 8px !important;
+    color: white;
+    padding: 20px;
+    overflow: hidden;
+    transition: 10s ease-in-out;
+}
+
+.user-card:hover {
+    transform: translate(5px, -5px);
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.welcome-text {
+    color: rgb(18, 25, 87);
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-avatar {
+    width: 24px !important;
+    height: 24px !important;
+    background-color: rgb(63, 73, 204) !important;
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 0.8rem !important;
+    font-weight: bold;
+    color: rgb(221, 218, 200)  !important;
+}
+
+.box-username-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding-bottom: 12px;
+}
+
+
+.card-content {
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+
+.username-text {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 600;
+    color: rgb(18, 25, 87);
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #aaaaaa;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.info-label {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+}
+
+.level-value {
+    color: #1976d2;
+    font-weight: 600;
+}

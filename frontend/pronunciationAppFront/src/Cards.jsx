@@ -27,7 +27,7 @@ export default function WordList() {
 
   return (
     <Container maxWidth="md">
-      <Box sx={{ my: 4 }}>
+      <Box>
         <Typography
           variant="h4"
           component="h1"
