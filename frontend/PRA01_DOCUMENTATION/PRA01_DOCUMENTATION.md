@@ -1,6 +1,6 @@
 ## PRA#01-React: Components Frontend Development
 
-In this documentation its exaplained the steps taken of the development.
+In this documentation its explained the steps taken of the development.
 
 ---
 
@@ -52,7 +52,7 @@ This is an example of the few objects created:
 
 Changed the variable BASE_URL with the new link for the Postman mock server.
 Created a new function called fetchUsers() that read the variable BASE_URL but withe users end point.
-Heres the code implemented, and highlighted the changes:
+Here's the code implemented, and highlighted the changes:
 
 <br>
 
@@ -74,7 +74,7 @@ The use of the hooks: useState and useEffect are the same as the Cards component
 
 <br>
 
-Inside the Users.jsx the render followed the idea of creating a Box to hold everything, then mapped the users data that the useEffect hook provided with from the axios. After mapping them, I created a Card with the user.id as key. Then follwed a hierarchy of creating Box components to hold the data inside, for example on the picture below we have Card -> Box -> Typography; CardContent -> Box -> Avatar && Typography;
+Inside the Users.jsx the render followed the idea of creating a Box to hold everything, then mapped the users data that the useEffect hook provided with from the axios. After mapping them, I created a Card with the user.id as key. Then followed a hierarchy of creating Box components to hold the data inside, for example on the picture below we have Card -> Box -> Typography; CardContent -> Box -> Avatar && Typography;
 
 <br>
 
@@ -118,7 +118,7 @@ I created a function to return a css color based on the level provided as parame
 
 <br>
 
-On the picture below we can see where the function is being used and the parameter being passed. Its being called inside the styling of the Card component of the word, and the parameter is the word.level.
+On the picture below, we can see where the function is being used and the parameter being passed. It's being called inside the styling of the Card component of the word, and the parameter is the word.level.
 
 <br>
 
@@ -132,7 +132,7 @@ On the picture below we can see where the function is being used and the paramet
 
 ---
 
-To set the words, I created a sortByLevel() function to sort the words JSON based on their level on ascending order,also created another useState hook to manage the state of the button pressed. The sorting happends when the user presses a button, thats the trigger for the sortedWords happen. For example:
+To set the words, I created a sortByLevel() function to sort the words in JSON based on their level in ascending order, also created another useState hook to manage the state of the button pressed. The sorting happends when the user presses a button, that's the trigger for the sortedWords to happen. For example:
 
 <br>
 
