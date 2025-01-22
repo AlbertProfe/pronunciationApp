@@ -13,11 +13,11 @@
     color: white;
     padding: 20px;
     overflow: hidden;
-    transition: 10s ease-in-out;
+    transition: 0.3s ease-in-out !important;
 }
 
 .user-card:hover {
-    transform: translate(5px, -5px);
+    transform: translateY(-10px);
 }
 
 .card-header {

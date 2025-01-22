@@ -1,11 +1,11 @@
-import { fetchUsers } from "./data-api";
+import { fetchUsers } from "../middleware/data-api";
 import { useState, useEffect } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Avatar from "@mui/material/Avatar";
-import "./assets/styles/UserCard.css"
+import "../assets/styles/UserCard.css"
 
 export default function UsersList() {
   // hooks and business logic
@@ -22,21 +22,6 @@ export default function UsersList() {
     };
     getUsers();
   }, []);
-
-  /* THIS IS MY ORIGINAL VERSION
-  return (
-    <>
-      <Card>
-        {users
-          .filter((user) => user.id === 1)
-          .map((user) => (
-            <li key={user.id}>{user.username}</li>
-          ))}
-      </Card>
-    </>
-  );
-  */
-  // THIS IS AI VERSION
   return (
     <Box className="user-container">
       {users
