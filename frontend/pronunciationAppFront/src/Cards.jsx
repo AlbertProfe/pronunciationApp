@@ -7,12 +7,10 @@ import {
   Container,
   Grid2,
 } from "@mui/material";
-import LevelButton from "./Button.jsx"; // Import LevelButton component
 import { fetchWords } from "./data-api";
 
 export default function WordList() {
   const [words, setWords] = useState([]);
-  const [filter, setFilter] = useState("");
 
   useEffect(() => {
     const getWords = async () => {
@@ -27,16 +25,6 @@ export default function WordList() {
     getWords();
   }, []);
 
-  // Function to handle filter change
-  const handleFilterChange = (newFilter) => {
-    setFilter(newFilter);
-  };
-
-  // Filter words based on selected difficulty level
-  const filteredWords = words.filter((word) =>
-    filter ? word.level === filter : true
-  );
-
   return (
     <Container maxWidth="md">
       <Box sx={{ my: 4 }}>
@@ -48,14 +36,12 @@ export default function WordList() {
         >
           Word List
         </Typography>
-        <LevelButton onFilterChange={handleFilterChange} /> {/* Pass handleFilterChange to LevelButton */}
-        <Grid container spacing={2}>
-          {filteredWords.map((word) => (
-            <Grid item xs={12} sm={6} md={4} key={word.id}>
+        <Grid2 container spacing={2}>
+          {words.map((word) => (
+            <Grid2 item xs={12} sm={6} md={4} key={word.id}>
               <Card
                 sx={{
-                  background:
-                    "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
+                  background: "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
                   backdropFilter: "blur(10px)",
                   boxShadow: "0 4px 6px rgba(186, 10, 202, 0.56)",
                   transition: "0.3s",
@@ -66,9 +52,6 @@ export default function WordList() {
                 }}
               >
                 <CardContent>
-                  <Typography variant="body2" sx={{ color: "rgb(0, 0, 0)" }}>
-                    Theme: {word.theme}
-                  </Typography>
                   <Typography
                     variant="h6"
                     component="div"
@@ -76,24 +59,15 @@ export default function WordList() {
                   >
                     {word.word}
                   </Typography>
-                  <Typography variant="body2" sx={{ color: "rgb(0, 0, 0)" }}>
-                    <p>Pronunciation: {word.phonetic}</p>
-                    <p>
-                      Synonyms:{" "}
-                      {word.synonym.map((syn, index) => (
-                        <span key={index}>
-                          {syn}
-                          {index < word.synonym.length - 1 ? ", " : ""}
-                        </span>
-                      ))}
-                    </p>
+                  <Typography variant="body2" sx={{ color: "#B0B8C1" }}>
+                    Pronunciation: {word.pronunciation}
                   </Typography>
                 </CardContent>
               </Card>
-            </Grid>
+            </Grid2>
           ))}
-        </Grid>
+        </Grid2>
       </Box>
     </Container>
   );
-};
+}

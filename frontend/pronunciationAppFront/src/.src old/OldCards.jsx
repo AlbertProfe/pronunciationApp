@@ -7,7 +7,7 @@ import {
   Container,
   Grid2,
 } from "@mui/material";
-import LevelButton from "../Button.jsx"; // Import LevelButton component
+import LevelButton from "./Button.jsx"; // Import LevelButton component
 import { fetchWords } from "./data-api.js";
 
 export default function WordList() {
@@ -49,9 +49,9 @@ export default function WordList() {
           Word List
         </Typography>
         <LevelButton onFilterChange={handleFilterChange} /> {/* Pass handleFilterChange to LevelButton */}
-        <Grid container spacing={2}>
+        <Grid2 container spacing={2}>
           {filteredWords.map((word) => (
-            <Grid item xs={12} sm={6} md={4} key={word.id}>
+            <Grid2 item xs={12} sm={6} md={4} key={word.id}>
               <Card
                 sx={{
                   background:
@@ -90,9 +90,9 @@ export default function WordList() {
                   </Typography>
                 </CardContent>
               </Card>
-            </Grid>
+            </Grid2>
           ))}
-        </Grid>
+        </Grid2>
       </Box>
     </Container>
   );
