@@ -1,0 +1,60 @@
+{
+  "words": [
+
+    { "id": 1, "word": "cat", "theme": "animals", "level": "easy", "phonetic": "/kæt/", "synonym": ["feline", "kitten", "pussycat"] },
+    { "id": 2, "word": "dog", "theme": "animals", "level": "easy", "phonetic": "/dɒɡ/", "synonym": ["canine", "puppy", "hound"] },
+    { "id": 3, "word": "lion", "theme": "animals", "level": "medium", "phonetic": "/ˈlaɪ.ən/", "synonym": ["king of the jungle", "big cat", "panthera"] },
+    { "id": 4, "word": "elephant", "theme": "animals", "level": "medium", "phonetic": "/ˈel.ɪ.fənt/", "synonym": ["jumbo", "pachyderm", "tusker"] },
+    { "id": 5, "word": "crocodile", "theme": "animals", "level": "hard", "phonetic": "/ˈkrɒk.ə.daɪl/", "synonym": ["reptile", "alligator", "croc"] },
+    { "id": 6, "word": "chameleon", "theme": "animals", "level": "hard", "phonetic": "/kəˈmiː.li.ən/", "synonym": ["lizard", "color changer", "reptile"] },
+    { "id": 7, "word": "owl", "theme": "animals", "level": "medium", "phonetic": "/aʊl/", "synonym": ["bird of prey", "night bird", "hooter"] },
+    { "id": 8, "word": "whale", "theme": "animals", "level": "medium", "phonetic": "/weɪl/", "synonym": ["marine mammal", "leviathan", "cetacean"] },
+    { "id": 9, "word": "kangaroo", "theme": "animals", "level": "medium", "phonetic": "/ˌkæŋ.ɡəˈruː/", "synonym": ["marsupial", "jumper", "roo"] },
+    { "id": 10, "word": "hedgehog", "theme": "animals", "level": "hard", "phonetic": "/ˈhɛdʒ.hɒɡ/", "synonym": ["spiny mammal", "porcupine", "urchin"] },
+
+     { "id": 11, "word": "bread", "theme": "food", "level": "easy", "phonetic": "/bred/", "synonym": ["loaf", "buns", "baguette"] },
+     { "id": 12, "word": "apple", "theme": "food", "level": "easy", "phonetic": "/ˈæp.əl/", "synonym": ["fruit", "granny smith", "pippin"] },
+     { "id": 13, "word": "pizza", "theme": "food", "level": "medium", "phonetic": "/ˈpiːt.sə/", "synonym": ["flatbread", "pie", "Italian dish"] },
+     { "id": 14, "word": "chocolate", "theme": "food", "level": "medium", "phonetic": "/ˈtʃɒk.lət/", "synonym": ["candy", "sweet", "cocoa"] },
+     { "id": 15, "word": "pomegranate", "theme": "food", "level": "hard", "phonetic": "/ˈpɒm.ɪˌɡræn.ɪt/", "synonym": ["fruit", "seeded fruit", "superfood"] },
+     { "id": 16, "word": "croissant", "theme": "food", "level": "hard", "phonetic": "/ˈkwɑː.sɒŋ/", "synonym": ["pastry", "crescent roll", "French bread"] },
+     { "id": 17, "word": "carrot", "theme": "food", "level": "easy", "phonetic": "/ˈkær.ət/", "synonym": ["vegetable", "root crop", "orange veggie"] },
+     { "id": 18, "word": "salad", "theme": "food", "level": "medium", "phonetic": "/ˈsæl.əd/", "synonym": ["greens", "lettuce mix", "garden salad"] },
+     { "id": 19, "word": "coffee", "theme": "food", "level": "medium", "phonetic": "/ˈkɒf.i/", "synonym": ["brew", "java", "espresso"] },
+     { "id": 20, "word": "sushi", "theme": "food", "level": "hard", "phonetic": "/ˈsuː.ʃi/", "synonym": ["raw fish", "Japanese dish", "nigiri"] },
+
+     { "id": 21, "word": "car", "theme": "transportation", "level": "easy", "phonetic": "/kɑːr/", "synonym": ["automobile", "vehicle", "sedan"] },
+     { "id": 22, "word": "bus", "theme": "transportation", "level": "easy", "phonetic": "/bʌs/", "synonym": ["coach", "shuttle", "minibus"] },
+     { "id": 23, "word": "bicycle", "theme": "transportation", "level": "easy", "phonetic": "/ˈbaɪ.sɪ.kəl/", "synonym": ["bike", "two-wheeler", "cycle"] },
+     { "id": 24, "word": "train", "theme": "transportation", "level": "medium", "phonetic": "/treɪn/", "synonym": ["locomotive", "railcar", "engine"] },
+     { "id": 25, "word": "airplane", "theme": "transportation", "level": "medium", "phonetic": "/ˈeə.pleɪn/", "synonym": ["aeroplane", "jet", "aircraft"] },
+     { "id": 26, "word": "submarine", "theme": "transportation", "level": "hard", "phonetic": "/ˈsʌb.məˌriːn/", "synonym": ["underwater vessel", "u-boat", "diving craft"] },
+     { "id": 27, "word": "hovercraft", "theme": "transportation", "level": "hard", "phonetic": "/ˈhʌv.əˌkrɑːft/", "synonym": ["air cushion vehicle", "ACV", "glider"] },
+     { "id": 28, "word": "motorcycle", "theme": "transportation", "level": "medium", "phonetic": "/ˈmoʊ.t̬ɚˌsaɪ.kəl/", "synonym": ["bike", "motorbike", "chopper"] },
+     { "id": 29, "word": "scooter", "theme": "transportation", "level": "easy", "phonetic": "/ˈskuː.tər/", "synonym": ["moped", "bike", "two-wheeler"] },
+     { "id": 30, "word": "ship", "theme": "transportation", "level": "medium", "phonetic": "/ʃɪp/", "synonym": ["vessel", "boat", "craft"] },
+
+     { "id": 31, "word": "tree", "theme": "nature", "level": "easy", "phonetic": "/triː/", "synonym": ["oak", "pine", "willow"] },
+     { "id": 32, "word": "river", "theme": "nature", "level": "medium", "phonetic": "/ˈrɪv.ər/", "synonym": ["stream", "creek", "watercourse"] },
+     { "id": 33, "word": "ocean", "theme": "nature", "level": "medium", "phonetic": "/ˈəʊ.ʃən/", "synonym": ["sea", "water body", "marine expanse"] },
+     { "id": 34, "word": "mountain", "theme": "nature", "level": "medium", "phonetic": "/ˈmaʊn.tɪn/", "synonym": ["peak", "summit", "ridge"] },
+     { "id": 35, "word": "volcano", "theme": "nature", "level": "hard", "phonetic": "/vɒlˈkeɪ.nəʊ/", "synonym": ["lava mountain", "eruption site", "fire mountain"] },
+     { "id": 36, "word": "rainforest", "theme": "nature", "level": "hard", "phonetic": "/ˈreɪnˌfɒr.ɪst/", "synonym": ["jungle", "tropical forest", "dense forest"] },
+     { "id": 37, "word": "flower", "theme": "nature", "level": "easy", "phonetic": "/ˈflaʊ.ər/", "synonym": ["blossom", "bloom", "petal"] },
+     { "id": 38, "word": "island", "theme": "nature", "level": "medium", "phonetic": "/ˈaɪ.lənd/", "synonym": ["isle", "atoll", "archipelago"] },
+     { "id": 39, "word": "desert", "theme": "nature", "level": "medium", "phonetic": "/ˈdez.ət/", "synonym": ["arid region", "wasteland", "dunes"] },
+     { "id": 40, "word": "cliff", "theme": "nature", "level": "hard", "phonetic": "/klɪf/", "synonym": ["rock face", "precipice", "bluff"] },
+
+     { "id": 41, "word": "happy", "theme": "emotions", "level": "easy", "phonetic": "/ˈhæp.i/", "synonym": ["joyful", "content", "cheerful"] },
+     { "id": 42, "word": "sad", "theme": "emotions", "level": "easy", "phonetic": "/sæd/", "synonym": ["unhappy", "sorrowful", "blue"] },
+     { "id": 43, "word": "angry", "theme": "emotions", "level": "easy", "phonetic": "/ˈæŋ.ɡri/", "synonym": ["mad", "furious", "irate"] },
+     { "id": 44, "word": "excited", "theme": "emotions", "level": "medium", "phonetic": "/ɪkˈsaɪ.tɪd/", "synonym": ["thrilled", "elated", "overjoyed"] },
+     { "id": 45, "word": "nervous", "theme": "emotions", "level": "medium", "phonetic": "/ˈnɜː.vəs/", "synonym": ["anxious", "jittery", "apprehensive"] },
+     { "id": 46, "word": "melancholy", "theme": "emotions", "level": "hard", "phonetic": "/ˈmel.əŋ.kɒl.i/", "synonym": ["sadness", "despondency", "sorrow"] },
+     { "id": 47, "word": "ecstatic", "theme": "emotions", "level": "hard", "phonetic": "/ɪkˈstæt.ɪk/", "synonym": ["euphoric", "overjoyed", "blissful"] },
+     { "id": 48, "word": "fearful", "theme": "emotions", "level": "medium", "phonetic": "/ˈfɪə.fəl/", "synonym": ["afraid", "terrified", "apprehensive"] },
+     { "id": 49, "word": "relieved", "theme": "emotions", "level": "medium", "phonetic": "/rɪˈliːvd/", "synonym": ["thankful", "comforted", "consoled"] },
+     { "id": 50, "word": "confident", "theme": "emotions", "level": "medium", "phonetic": "/ˈkɒn.fɪ.dənt/", "synonym": ["self-assured", "secure", "optimistic"] }
+  ]
+}
+

@@ -1,4 +1,3 @@
-// api.js
 import axios from "axios";
 
 const BASE_URL = "https://f4c63f4a-942d-42a3-9041-5d9f452303cd.mock.pstmn.io";

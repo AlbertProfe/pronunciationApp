@@ -5,7 +5,7 @@ import {
   CardContent,
   Typography,
   Container,
-  Grid2,
+  Grid,
 } from "@mui/material";
 import { fetchWords } from "./data-api";
 
@@ -36,9 +36,9 @@ export default function WordList() {
         >
           Word List
         </Typography>
-        <Grid2 container spacing={2}>
+        <Grid container spacing={2}>
           {words.map((word) => (
-            <Grid2 item xs={12} sm={6} md={4} key={word.id}>
+            <Grid item xs={12} sm={6} md={4} key={word.id}>
               <Card
                 sx={{
                   background: "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
@@ -76,9 +76,9 @@ export default function WordList() {
                   </Typography>
                 </CardContent>
               </Card>
-            </Grid2>
+            </Grid>
           ))}
-        </Grid2>
+        </Grid>
       </Box>
     </Container>
   );
