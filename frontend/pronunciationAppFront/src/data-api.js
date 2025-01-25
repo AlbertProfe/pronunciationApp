@@ -1,8 +1,8 @@
-// api.js
 import axios from "axios";
 
 const BASE_URL = "https://f4c63f4a-942d-42a3-9041-5d9f452303cd.mock.pstmn.io";
 
+//export for words
 export const fetchWords = async () => {
   try {
     const response = await axios.get(`${BASE_URL}/words`);
@@ -13,6 +13,7 @@ export const fetchWords = async () => {
   }
 }
 
+//export for users
 export  const fetchUser = async () => {
     try {
       const response = await axios.get(`${BASE_URL}/users`);
