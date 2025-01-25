@@ -15,7 +15,7 @@ export const fetchWords = async () => {
 //export for users
 export  const fetchUser = async () => {
     try {
-      const response = await axios.get("./public/users.json");
+      const response = await axios.get("./assets/users.json");
       return response.data.user;
     } catch (error) {
       console.error("Error fetching user:", error);

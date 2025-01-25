@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Box,
   Card,
@@ -6,27 +6,45 @@ import {
   Typography,
   Avatar,
   Container,
-  Grid2,
+  Grid,
 } from "@mui/material";
 import { fetchUser } from "./data-api";
 
-export default function User() {
-  const [user, setUser] = useState(null); // Initialize as null
+function UserComponent() {
+  const [user, setUser] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const getUser = async () => {
       try {
+        setIsLoading(true);
         const data = await fetchUser();
-        const userId = 1; // The ID of the user you want to retrieve
-        const user = data.find((u) => u.id === userId); // Find the user with the specified ID
-        setUser(user);
+        console.log("Fetched data:", data);
+        console.log("Type of data:", typeof data);
+        console.log("Is array?:", Array.isArray(data));
+
+        if (data && Array.isArray(data)) {
+          const userId = "1";
+          const foundUser = data.find((u) => u.id === userId);
+          setUser(foundUser);
+        } else {
+          console.error("Data is not array:", data);
+          setUser(null);
+        }
       } catch (error) {
-        console.error("Failed to fetch user.", error);
+        console.error("Failed to fetch user:", error);
+        setUser(null);
+      } finally {
+        setIsLoading(false);
       }
     };
 
     getUser();
   }, []);
+
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <Container maxWidth="md">
@@ -40,7 +58,7 @@ export default function User() {
           Your Profile:
         </Typography>
         {user ? (
-          <Grid2 item xs={12} sm={6} md={4} key={user.id}>
+          <Grid item xs={12} sm={6} md={4} key={user.id}>
             <Card
               sx={{
                 background:
@@ -58,22 +76,22 @@ export default function User() {
                 <Typography variant="body2" sx={{ color: "rgb(0, 0, 0)" }}>
                   Name: {user.name}
                 </Typography>
-                <Avatar>
-                  {user.avatar}
-                </Avatar>
+                <Avatar src={user.avatar.imageId} alt={user.avatar.imageName} />
                 <Typography variant="body2" sx={{ color: "rgb(0, 0, 0)" }}>
                   <p>Age: {user.age}</p>
                   <p>Email: {user.email}</p>
                 </Typography>
               </CardContent>
             </Card>
-          </Grid2>
+          </Grid>
         ) : (
           <Typography variant="body2" sx={{ color: "rgb(0, 0, 0)" }}>
-            User not found
+            User not found or data could not be fetched.
           </Typography>
         )}
       </Box>
     </Container>
   );
 }
+
+export default UserComponent;
