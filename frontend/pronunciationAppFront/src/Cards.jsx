@@ -7,10 +7,12 @@ import {
   Container,
   Grid,
 } from "@mui/material";
+import LevelButton from "./Button.jsx"; // Import LevelButton component
 import { fetchWords } from "./data-api";
 
 export default function WordList() {
   const [words, setWords] = useState([]);
+  const [filter, setFilter] = useState("");
 
   useEffect(() => {
     const getWords = async () => {
@@ -25,6 +27,16 @@ export default function WordList() {
     getWords();
   }, []);
 
+  // Function to handle filter change
+  const handleFilterChange = (newFilter) => {
+    setFilter(newFilter);
+  };
+
+  // Filter words based on selected difficulty level
+  const filteredWords = words.filter((word) =>
+    filter ? word.level === filter : true
+  );
+
   return (
     <Container maxWidth="md">
       <Box sx={{ my: 4 }}>
@@ -36,8 +48,9 @@ export default function WordList() {
         >
           Word List
         </Typography>
+        <LevelButton onFilterChange={handleFilterChange} /> {/* Pass handleFilterChange to LevelButton */}
         <Grid container spacing={2}>
-          {words.map((word) => (
+          {filteredWords.map((word) => (
             <Grid item xs={12} sm={6} md={4} key={word.id}>
               <Card
                 sx={{
@@ -52,8 +65,8 @@ export default function WordList() {
                 }}
               >
                 <CardContent>
-                  <Typography variant="body2" sx={{ color: "rgb(0, 0, 0)" }}>
-                    Theme: {word.theme}
+                  <Typography variant="body2" sx={{ color: "rgb(107, 59, 151)" }}>
+                    {word.theme}
                   </Typography>
                   <Typography
                     variant="h6"
