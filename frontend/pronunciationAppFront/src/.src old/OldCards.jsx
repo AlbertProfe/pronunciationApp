@@ -54,8 +54,7 @@ export default function WordList() {
             <Grid2 item xs={12} sm={6} md={4} key={word.id}>
               <Card
                 sx={{
-                  background:
-                    "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
+                  background: "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
                   backdropFilter: "blur(10px)",
                   boxShadow: "0 4px 6px rgba(186, 10, 202, 0.56)",
                   transition: "0.3s",

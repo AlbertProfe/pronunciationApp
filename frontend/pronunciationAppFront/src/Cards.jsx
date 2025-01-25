@@ -52,6 +52,9 @@ export default function WordList() {
                 }}
               >
                 <CardContent>
+                  <Typography variant="body2" sx={{ color: "rgb(0, 0, 0)" }}>
+                    Theme: {word.theme}
+                  </Typography>
                   <Typography
                     variant="h6"
                     component="div"
@@ -59,8 +62,17 @@ export default function WordList() {
                   >
                     {word.word}
                   </Typography>
-                  <Typography variant="body2" sx={{ color: "#B0B8C1" }}>
-                    Pronunciation: {word.pronunciation}
+                  <Typography variant="body2" sx={{ color: "rgb(0, 0, 0)" }}>
+                    <p>Pronunciation: {word.phonetic}</p>
+                    <p>
+                      Synonyms:{" "}
+                      {word.synonym.map((syn, index) => (
+                        <span key={index}>
+                          {syn}
+                          {index < word.synonym.length - 1 ? ", " : ""}
+                        </span>
+                      ))}
+                    </p>
                   </Typography>
                 </CardContent>
               </Card>
