@@ -1,16 +1,16 @@
 import './App.css'
-import Cards from "./Cards.jsx"
-import Header from "./Hero.jsx";
+import Header from "./Header.jsx";
+import Cards from "./Cards.jsx";
+import User from "./User.jsx";
 
 function App() {
 
-
   return (
     <>
-      <h2>Welcome to PronunciationApp</h2>
+      <h2>Welcome to Meme App</h2>
 
       <Header />
-
+      <User />
       <Cards />
     </>
   );

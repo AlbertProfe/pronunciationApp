@@ -7,8 +7,8 @@ import {
   Container,
   Grid2,
 } from "@mui/material";
-import LevelButton from "./Button.jsx"; // Import LevelButton component
-import { fetchWords } from "./data-api";
+import LevelButton from "../Button.jsx"; // Import LevelButton component
+import { fetchWords } from "./data-api.js";
 
 export default function WordList() {
   const [words, setWords] = useState([]);
