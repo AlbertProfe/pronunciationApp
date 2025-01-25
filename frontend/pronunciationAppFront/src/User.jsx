@@ -6,7 +6,7 @@ import {
   Typography,
   Avatar,
   Container,
-  Grid2 as Grid,
+  Grid2,
 } from "@mui/material";
 import { fetchUser } from "./data-api";
 
@@ -40,7 +40,7 @@ export default function User() {
           Your Profile:
         </Typography>
         {user ? (
-          <Grid item xs={12} sm={6} md={4} key={user.id}>
+          <Grid2 item xs={12} sm={6} md={4} key={user.id}>
             <Card
               sx={{
                 background:
@@ -67,7 +67,7 @@ export default function User() {
                 </Typography>
               </CardContent>
             </Card>
-          </Grid>
+          </Grid2>
         ) : (
           <Typography variant="body2" sx={{ color: "rgb(0, 0, 0)" }}>
             User not found
