@@ -2,7 +2,9 @@ package dev.pronunciationAppBack.controller;
 
 import dev.pronunciationAppBack.model.Word;
 import dev.pronunciationAppBack.model.WordList;
+import dev.pronunciationAppBack.model.User;
 import dev.pronunciationAppBack.repository.WordRepository;
+import dev.pronunciationAppBack.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -20,7 +22,8 @@ public class WordController {
     @Autowired
     private WordRepository wordRepository;
 
-
+    @Autowired
+    private UserRepository userRepository;
 
     @GetMapping
     public ResponseEntity<List<Word>> getAllWords() {
@@ -41,6 +44,8 @@ public class WordController {
                 .orElseGet(() -> new ResponseEntity<>(headers, HttpStatus.NOT_FOUND));
     }
 
+
+
     @GetMapping("/{level}")
     public ResponseEntity<WordList> getWordsByLevel(@PathVariable String level) {
         List<Word> words = (List<Word>) wordRepository.getWordsByLevel(level);
@@ -50,6 +55,17 @@ public class WordController {
                 ? new ResponseEntity<>(new WordList(words), headers, HttpStatus.OK)
                 : new ResponseEntity<>(headers, HttpStatus.NOT_FOUND);
     }
+
+    @GetMapping("/user/{id}")
+    public ResponseEntity<User> getUserById(@PathVariable Long id) {
+        Optional<User> user = userRepository.findById(id);
+        HttpHeaders headers = getCommonHeaders("Get user by ID");
+
+        return user.map(value -> new ResponseEntity<>(value, headers, HttpStatus.OK))
+                .orElseGet(() -> new ResponseEntity<>(headers, HttpStatus.NOT_FOUND));
+    }
+
+
 
     @PostMapping("/createWord")
     public ResponseEntity<Word> createWord(@RequestBody Word word) {
