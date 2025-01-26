@@ -1,4 +1,4 @@
-# PronunciationApp v0.1
+# PronunciationApp Frontend v0.1
 
 ## Reference Lab
 
@@ -280,5 +280,4 @@ export default function WordList(): JSX.Element {
     </Container>
   );
 }
-
 ```
