@@ -1,0 +1,404 @@
+{
+    "words": [
+        {
+            "id": 1,
+            "word": "Cat",
+            "theme": "Animals",
+            "level": "🟢 EASY",
+            "phonetic": "/kæt/",
+            "synonym": "Feline"
+        },
+        {
+            "id": 2,
+            "word": "Dog",
+            "theme": "Animals",
+            "level": "🟢 EASY",
+            "phonetic": "/dɒg/",
+            "synonym": "Canine"
+        },
+        {
+            "id": 3,
+            "word": "Elephant",
+            "theme": "Animals",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/ˈɛləfənt/",
+            "synonym": "Pachyderm"
+        },
+        {
+            "id": 4,
+            "word": "Lion",
+            "theme": "Animals",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/ˈlaɪən/",
+            "synonym": "Big cat"
+        },
+        {
+            "id": 5,
+            "word": "Penguin",
+            "theme": "Animals",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/ˈpɛŋɡwɪn/",
+            "synonym": "Bird"
+        },
+        {
+            "id": 6,
+            "word": "Fish",
+            "theme": "Animals",
+            "level": "🟢 EASY",
+            "phonetic": "/fɪʃ/",
+            "synonym": "Marine creature"
+        },
+        {
+            "id": 7,
+            "word": "Tiger",
+            "theme": "Animals",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/ˈtaɪɡər/",
+            "synonym": "Big cat"
+        },
+        {
+            "id": 8,
+            "word": "Whale",
+            "theme": "Animals",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/weɪl/",
+            "synonym": "Cetacean"
+        },
+        {
+            "id": 9,
+            "word": "Hippopotamus",
+            "theme": "Animals",
+            "level": "🔴 HARD",
+            "phonetic": "/ˌhɪpəˈpɒtəməs/",
+            "synonym": "Hippo"
+        },
+        {
+            "id": 10,
+            "word": "Giraffe",
+            "theme": "Animals",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/dʒəˈræf/",
+            "synonym": "Tall mammal"
+        },
+        {
+            "id": 11,
+            "word": "Apple",
+            "theme": "Food",
+            "level": "🟢 EASY",
+            "phonetic": "/ˈæpəl/",
+            "synonym": "Fruit"
+        },
+        {
+            "id": 12,
+            "word": "Banana",
+            "theme": "Food",
+            "level": "🟢 EASY",
+            "phonetic": "/bəˈnænə/",
+            "synonym": "Fruit"
+        },
+        {
+            "id": 13,
+            "word": "Grape",
+            "theme": "Food",
+            "level": "🟢 EASY",
+            "phonetic": "/ɡreɪp/",
+            "synonym": "Fruit"
+        },
+        {
+            "id": 14,
+            "word": "Strawberry",
+            "theme": "Food",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/ˈstrɔːbɛri/",
+            "synonym": "Fruit"
+        },
+        {
+            "id": 15,
+            "word": "Chocolate",
+            "theme": "Food",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/ˈtʃɒklɪt/",
+            "synonym": "Candy"
+        },
+        {
+            "id": 16,
+            "word": "Broccoli",
+            "theme": "Food",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/ˈbrɒkəli/",
+            "synonym": "Vegetable"
+        },
+        {
+            "id": 17,
+            "word": "Croissant",
+            "theme": "Food",
+            "level": "🔴 HARD",
+            "phonetic": "/krwɑːˈsɑːnt/",
+            "synonym": "Pastry"
+        },
+        {
+            "id": 18,
+            "word": "Mushroom",
+            "theme": "Food",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/ˈmʌʃruːm/",
+            "synonym": "Fungus"
+        },
+        {
+            "id": 19,
+            "word": "Pomegranate",
+            "theme": "Food",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈpɒmɪˌɡrænɪt/",
+            "synonym": "Fruit"
+        },
+        {
+            "id": 20,
+            "word": "Asparagus",
+            "theme": "Food",
+            "level": "🔴 HARD",
+            "phonetic": "/əsˈpærəɡəs/",
+            "synonym": "Vegetable"
+        },
+        {
+            "id": 21,
+            "word": "Car",
+            "theme": "Transport",
+            "level": "🟢 EASY",
+            "phonetic": "/kɑːr/",
+            "synonym": "Automobile"
+        },
+        {
+            "id": 22,
+            "word": "Train",
+            "theme": "Transport",
+            "level": "🟢 EASY",
+            "phonetic": "/treɪn/",
+            "synonym": "Locomotive"
+        },
+        {
+            "id": 23,
+            "word": "Airplane",
+            "theme": "Transport",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/ˈɛəpleɪn/",
+            "synonym": "Aircraft"
+        },
+        {
+            "id": 24,
+            "word": "Bicycle",
+            "theme": "Transport",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/ˈbaɪsɪkl/",
+            "synonym": "Bike"
+        },
+        {
+            "id": 25,
+            "word": "Yacht",
+            "theme": "Transport",
+            "level": "🔴 HARD",
+            "phonetic": "/jɒt/",
+            "synonym": "Boat"
+        },
+        {
+            "id": 26,
+            "word": "Submarine",
+            "theme": "Transport",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈsʌmbməriːn/",
+            "synonym": "Underwater vessel"
+        },
+        {
+            "id": 27,
+            "word": "Balloon",
+            "theme": "Transport",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/bəˈluːn/",
+            "synonym": "Airship"
+        },
+        {
+            "id": 28,
+            "word": "Spaceship",
+            "theme": "Transport",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈspeɪsʃɪp/",
+            "synonym": "Spacecraft"
+        },
+        {
+            "id": 29,
+            "word": "Hovercraft",
+            "theme": "Transport",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈhʌvəkrɑːft/",
+            "synonym": "Air-cushion vehicle"
+        },
+        {
+            "id": 30,
+            "word": "Sun",
+            "theme": "Nature",
+            "level": "🟢 EASY",
+            "phonetic": "/sʌn/",
+            "synonym": "Star"
+        },
+        {
+            "id": 31,
+            "word": "Moon",
+            "theme": "Nature",
+            "level": "🟢 EASY",
+            "phonetic": "/muːn/",
+            "synonym": "Satellite"
+        },
+        {
+            "id": 32,
+            "word": "Volcano",
+            "theme": "Nature",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/vɒlˈkeɪnə/",
+            "synonym": "Mountain"
+        },
+        {
+            "id": 33,
+            "word": "Avalanche",
+            "theme": "Nature",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈævəlæntʃ/",
+            "synonym": "Snow slide"
+        },
+        {
+            "id": 34,
+            "word": "Rainbow",
+            "theme": "Nature",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/ˈreɪnbəʊ/",
+            "synonym": "Arc"
+        },
+        {
+            "id": 35,
+            "word": "Tsunami",
+            "theme": "Nature",
+            "level": "🔴 HARD",
+            "phonetic": "/tsuˈnɑːmi/",
+            "synonym": "Tidal wave"
+        },
+        {
+            "id": 36,
+            "word": "Galaxy",
+            "theme": "Nature",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/ˈgæləksi/",
+            "synonym": "Milky way"
+        },
+        {
+            "id": 37,
+            "word": "Hurricane",
+            "theme": "Nature",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈhɜːrɪˌkeɪn/",
+            "synonym": "Cyclone"
+        },
+        {
+            "id": 38,
+            "word": "Happy",
+            "theme": "Emotions",
+            "level": "🟢 EASY",
+            "phonetic": "/ˈhæpi/",
+            "synonym": "Joyful"
+        },
+        {
+            "id": 39,
+            "word": "Sad",
+            "theme": "Emotions",
+            "level": "🟢 EASY",
+            "phonetic": "/sæd/",
+            "synonym": "Unhappy"
+        },
+        {
+            "id": 40,
+            "word": "Anxious",
+            "theme": "Emotions",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/ˈæŋʃəs/",
+            "synonym": "Nervous"
+        },
+        {
+            "id": 41,
+            "word": "Ecstatic",
+            "theme": "Emotions",
+            "level": "🔴 HARD",
+            "phonetic": "/ɪkˈstætɪk/",
+            "synonym": "Elated"
+        },
+        {
+            "id": 42,
+            "word": "Melancholy",
+            "theme": "Emotions",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈmɛlənˌkɒli/",
+            "synonym": "Sorrow"
+        },
+        {
+            "id": 43,
+            "word": "Tree",
+            "theme": "Nature",
+            "level": "🟢 EASY",
+            "phonetic": "/triː/",
+            "synonym": "Plant"
+        },
+        {
+            "id": 44,
+            "word": "Flower",
+            "theme": "Nature",
+            "level": "🟢 EASY",
+            "phonetic": "/ˈflaʊər/",
+            "synonym": "Blossom"
+        },
+        {
+            "id": 45,
+            "word": "Chair",
+            "theme": "Objects",
+            "level": "🟢 EASY",
+            "phonetic": "/tʃɛər/",
+            "synonym": "Seat"
+        },
+        {
+            "id": 46,
+            "word": "Table",
+            "theme": "Objects",
+            "level": "🟢 EASY",
+            "phonetic": "/ˈteɪbəl/",
+            "synonym": "Desk"
+        },
+        {
+            "id": 47,
+            "word": "Door",
+            "theme": "Objects",
+            "level": "🟢 EASY",
+            "phonetic": "/dɔːr/",
+            "synonym": "Entryway"
+        },
+        {
+            "id": 48,
+            "word": "Window",
+            "theme": "Objects",
+            "level": "🟢 EASY",
+            "phonetic": "/ˈwɪndəʊ/",
+            "synonym": "Pane"
+        },
+        {
+            "id": 49,
+            "word": "Light",
+            "theme": "Objects",
+            "level": "🟢 EASY",
+            "phonetic": "/laɪt/",
+            "synonym": "Illumination"
+        },
+        {
+            "id": 50,
+            "word": "Computer",
+            "theme": "Objects",
+            "level": "🟡 MEDIUM",
+            "phonetic": "/kəmˈpjuːtər/",
+            "synonym": "Pc"
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 import './App.css'
 import Cards from "./Cards.jsx"
-import Header from "./Hero.jsx";
+import Header from "./Header.jsx";
 
 function App() {
 

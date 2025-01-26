@@ -7,7 +7,7 @@ import {
   Container,
   Grid,
 } from "@mui/material";
-import { fetchWords } from "./data-api";
+import { fetchWords } from "./data-api.js";
 
 export default function WordList() {
   const [words, setWords] = useState([]);
@@ -60,11 +60,15 @@ export default function WordList() {
                     {word.word}
                   </Typography>
                   <Typography variant="body2" sx={{ color: "#B0B8C1" }}>
-                    Pronunciation: {word.pronunciation}
+                    Pronunciation: {word.pronunciation} <br />
+                    Phonetic: {word.phonetic} <br />
+                    Synonym : {word.synonym} <br />                    
+                    Theme: {word.theme} <br />
+                    Level: {word.level} 
                   </Typography>
                 </CardContent>
               </Card>
-            </Grid>
+            // </Grid>
           ))}
         </Grid>
       </Box>
