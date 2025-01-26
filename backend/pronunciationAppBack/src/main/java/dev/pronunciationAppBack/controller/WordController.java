@@ -1,6 +1,7 @@
 package dev.pronunciationAppBack.controller;
 
 import dev.pronunciationAppBack.model.Word;
+import dev.pronunciationAppBack.model.WordList;
 import dev.pronunciationAppBack.repository.WordRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -19,11 +20,7 @@ public class WordController {
     @Autowired
     private WordRepository wordRepository;
 
-    @GetMapping("/hello")
-    public ResponseEntity<String> hello() {
-        HttpHeaders headers = getCommonHeaders("Hello endpoint");
-        return new ResponseEntity<>("hello Emiliano, are you sleeping?", headers, HttpStatus.OK);
-    }
+
 
     @GetMapping
     public ResponseEntity<List<Word>> getAllWords() {
@@ -42,6 +39,16 @@ public class WordController {
 
         return word.map(value -> new ResponseEntity<>(value, headers, HttpStatus.OK))
                 .orElseGet(() -> new ResponseEntity<>(headers, HttpStatus.NOT_FOUND));
+    }
+
+    @GetMapping("/{level}")
+    public ResponseEntity<WordList> getWordsByLevel(@PathVariable String level) {
+        List<Word> words = (List<Word>) wordRepository.getWordsByLevel(level);
+        HttpHeaders headers = getCommonHeaders("Get words by level");
+
+        return !words.isEmpty()
+                ? new ResponseEntity<>(new WordList(words), headers, HttpStatus.OK)
+                : new ResponseEntity<>(headers, HttpStatus.NOT_FOUND);
     }
 
     @PostMapping("/createWord")
