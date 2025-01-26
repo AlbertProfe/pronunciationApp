@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import { fetchWords } from "./data-api";
 import { filterByLevel } from "./utils";
+import { AnimatedCard } from "./AnimatedCard";
 
 export default function WordList() {
   const [words, setWords] = useState([]);
@@ -64,39 +65,40 @@ export default function WordList() {
         <Grid container spacing={2}>
           {filterByLevel(words, level).map((word) => (
             <Grid item xs={12} sm={6} md={4} key={word.id}>
-              <Card
-                sx={{
-                  background: "linear-gradient(45deg,rgb(16, 59, 215) 30%,rgb(31, 78, 139) 90%)",
-                  boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                  transition: "0.3s",
-                  "&:hover": {
-                    transition: "0.3s ease-in-out",
-                    transform: "scale(1.05)",
-                    boxShadow: "0 6px 8px rgba(0, 0, 0, 0.15)",
-                  },
-                }}
-              >
-                <CardContent>
-                  <Typography
-                    variant="h6"
-                    component="div"
-                    sx={{ color: "#F0F4F8" }}
-                  >
-                    {word.word}
-                  </Typography>
-                  <Typography variant="body2" sx={{ color: "#B0B8C1" }}>
-                    Pronunciation: {word.pronunciation}
-                  </Typography>
-                  <Typography variant="body2" sx={{ color: "#B0B8C1" }}>
-                    level: {word.level}
-                  </Typography>
-                  {word.synonyms && (
-                    <Typography variant="body2" sx={{ color: "#B0B8C1" }}>
-                      Synonyms: {word.synonyms.join(", ")}
+              <AnimatedCard>
+                <Card
+                  sx={{
+                    background:
+                      "linear-gradient(45deg,rgb(16, 59, 215) 30%,rgb(31, 78, 139) 90%)",
+                    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                    transition: "0.3s",
+                    "&:hover": {
+                      boxShadow: "0 6px 8px rgba(0, 0, 0, 0.15)",
+                    },
+                  }}
+                >
+                  <CardContent>
+                    <Typography
+                      variant="h6"
+                      component="div"
+                      sx={{ color: "#F0F4F8" }}
+                    >
+                      {word.word}
                     </Typography>
-                  )}
-                </CardContent>
-              </Card>
+                    <Typography variant="body2" sx={{ color: "#B0B8C1" }}>
+                      Pronunciation: {word.pronunciation}
+                    </Typography>
+                    <Typography variant="body2" sx={{ color: "#B0B8C1" }}>
+                      level: {word.level}
+                    </Typography>
+                    {word.synonyms && (
+                      <Typography variant="body2" sx={{ color: "#B0B8C1" }}>
+                        Synonyms: {word.synonyms.join(", ")}
+                      </Typography>
+                    )}
+                  </CardContent>
+                </Card>
+              </AnimatedCard>
             </Grid>
           ))}
         </Grid>
