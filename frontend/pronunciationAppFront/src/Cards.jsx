@@ -13,6 +13,8 @@ import {
 import { fetchWords } from "./data-api";
 import { filterByLevel } from "./utils";
 import { AnimatedCard } from "./AnimatedCard";
+import { WordSynonyms } from "./WordSynonyms";
+
 
 export default function WordList() {
   const [words, setWords] = useState([]);
@@ -91,10 +93,12 @@ export default function WordList() {
                     <Typography variant="body2" sx={{ color: "#B0B8C1" }}>
                       level: {word.level}
                     </Typography>
-                    {word.synonyms && (
-                      <Typography variant="body2" sx={{ color: "#B0B8C1" }}>
-                        Synonyms: {word.synonyms.join(", ")}
-                      </Typography>
+                    {word.synonyms ? (
+                      <WordSynonyms synonyms={word.synonyms} />
+                    ) : (
+                      <Typography variant="body1" sx={{color: "aliceblue", padding: '1.2rem'}} >
+                          No synonyms to show
+                        </Typography>
                     )}
                   </CardContent>
                 </Card>

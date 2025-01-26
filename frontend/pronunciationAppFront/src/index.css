@@ -13,7 +13,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #4b6cb7, #182848);
+  background: radial-gradient(ellipse at center, #4b6cb7, #182848);
   color: #F0F4F8;  /* Soft light gray text */
   line-height: 1.6;
   letter-spacing: 0.5px;

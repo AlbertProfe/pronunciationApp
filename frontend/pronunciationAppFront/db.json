@@ -1,0 +1,123 @@
+{
+  "words": {
+    "words": [
+      {
+        "id": "8b9248a4e0b64bbccf82e7723a3734279bf9bbc4",
+        "word": "benevolent",
+        "pronunciation": "/bɪˈnɛvələnt/",
+        "level": 3
+      },
+      {
+        "id": "3a7bd3e2a07e8c7e9b6e0d2c1f4a5b8d9c0e3f2",
+        "word": "serendipity",
+        "pronunciation": "/ˌserənˈdɪpɪti/",
+        "level": 1
+      },
+      {
+        "id": "5c9d7f3e1a2b4d6e8g0h9i7j6k5l4m3n2o1p",
+        "word": "ephemeral",
+        "pronunciation": "/ɪˈfɛmərəl/",
+        "level": 3,
+        "synonyms": ["transient", "fleeting", "momentary"]
+      },
+      {
+        "id": "2f4e6d8c0b2a4d6e8f0a2c4e6g8i0k2m4o6q",
+        "word": "ubiquitous",
+        "pronunciation": "/juːˈbɪkwɪtəs/",
+        "level": 3,
+        "synonyms": ["omnipresent", "universal", "pervasive"]
+      },
+      {
+        "id": "7h9j1l3n5p7r9t1v3x5z7b9d1f3h5j7l9n",
+        "word": "mellifluous",
+        "pronunciation": "/məˈlɪfluəs/",
+        "level": 3,
+        "synonyms": ["harmonious", "melodious", "euphonic"]
+      },
+      {
+        "id": "1a3c5e7g9i1k3m5o7q9s1u3w5y7a9c1e3",
+        "word": "eloquent",
+        "pronunciation": "/ˈɛləkwənt/",
+        "level": 1,
+        "synonyms": ["articulate", "expressive", "persuasive"]
+      },
+      {
+        "id": "4b6d8f0h2j4l6n8p0r2t4v6x8z0b2d4f6",
+        "word": "quintessential",
+        "pronunciation": "/ˌkwɪntɪˈsenʃəl/",
+        "level": 2,
+        "synonyms": ["typical", "ideal", "archetypal"]
+      },
+      {
+        "id": "9k1m3o5q7s9u1w3y5a7c9e1g3i5k7m9o",
+        "word": "ethereal",
+        "pronunciation": "/ɪˈθɪəriəl/",
+        "level": 2,
+        "synonyms": ["delicate", "heavenly", "airy"]
+      },
+      {
+        "id": "2p4r6t8v0x2z4b6d8f0h2j4l6n8p0r2t",
+        "word": "surreptitious",
+        "pronunciation": "/ˌsʌrəpˈtɪʃəs/",
+        "level": 2,
+        "synonyms": ["secretive", "clandestine", "stealthy"]
+      },
+      {
+        "id": "5u7w9y1a3c5e7g9i1k3m5o7q9s1u3w5",
+        "word": "labyrinthine",
+        "pronunciation": "/ˌlæbəˈrɪnθaɪn/",
+        "level": 1,
+        "synonyms": ["complex", "intricate", "convoluted"]
+      },
+      {
+        "id": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
+        "word": "ambivalent",
+        "pronunciation": "/æmˈbɪvələnt/",
+        "level": 2
+      },
+      {
+        "id": "z1x2c3v4b5n6m7q8w9e0r1t2y3u4i5o6",
+        "word": "capricious",
+        "pronunciation": "/kəˈprɪʃəs/",
+        "level": 3,
+        "synonyms": ["unpredictable", "impulsive", "fickle"]
+      },
+      {
+        "id": "q1w2e3r4t5y6u7i8o9p0a1s2d3f4g5h6",
+        "word": "idiosyncratic",
+        "pronunciation": "/ˌɪdiəsɪŋˈkrætɪk/",
+        "level": 1,
+        "synonyms": ["distinctive", "peculiar", "individual"]
+      },
+      {
+        "id": "m1n2b3v4c5x6z7a8s9d0f1g2h3j4k5l6",
+        "word": "resilient",
+        "pronunciation": "/rɪˈzɪliənt/",
+        "level": 2,
+        "synonyms": ["strong", "hardy", "adaptable"]
+      }
+    ]
+  },
+  "user": {
+    "id": "1",
+    "name": "Jane Doe",
+    "age": 28,
+    "isActive": true,
+    "joinDate": "2024-12-10",
+    "email": "jane.doe@example.com",
+    "phone": "+1234567890",
+    "address": {
+      "street": "123 Main St",
+      "city": "Springfield",
+      "zipcode": "12345"
+    },
+    "preferences": {
+      "newsletter": true,
+      "notifications": false
+    },
+    "profile": {
+      "avatar": { "imageId": "abc123", "imageName": "Jane_Doe" },
+      "bio": "Avid traveler and coffee enthusiast."
+    }
+  }
+}
