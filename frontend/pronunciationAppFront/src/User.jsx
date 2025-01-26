@@ -31,22 +31,29 @@ export default function User() {
       {error !== null ? (
         <h3 style={{ color: "red" }}>{error}</h3>
       ) : (
-        <Card variant="outlined" sx={{ display: 'inline-block', background: "black" }}>
+        <Card
+          variant="outlined"
+          sx={{
+            display: "inline-block",
+            background:
+              "linear-gradient(45deg,rgb(16, 59, 215) 30%,rgb(31, 78, 139) 90%)",
+          }}
+        >
           <Box
             sx={{
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
               padding: "1rem",
-              justifyContent: 'start',
-              gap: '2rem',
+              justifyContent: "start",
+              gap: "2rem",
             }}
           >
             <Avatar
               {...stringAvatar(user.name)}
               sx={{ width: 100, height: 100 }}
             />
-            <CardContent sx={{ flex: "1", color: "white", textAlign: 'left' }}>
+            <CardContent sx={{ flex: "1", color: "white", textAlign: "left" }}>
               <Typography component="div" variant="h5">
                 {user.name}
               </Typography>
