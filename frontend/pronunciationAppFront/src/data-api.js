@@ -22,7 +22,3 @@ export const fetchUserData = async () => {
     throw error;
   }
 };
-
-export const getUserImg = (name) => {
-  return `https://avatar.iran.liara.run/username?username=${encodeURIComponent(name)}`
-}
