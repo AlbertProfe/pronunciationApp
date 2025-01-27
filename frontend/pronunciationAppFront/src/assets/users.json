@@ -1,41 +1,11 @@
 [
   {
-    "id": "1",
-    "name": "Alice Bennett",
-    "age": 28,
-    "isActive": true,
-    "joinDate": "2023-06-12",
-    "email": "alice.bennett@example.com",
-    "avatar": {
-      "imageId": "https://gravatar.com/avatar/d3bdb991db5bc4529b3ede7b53b75f57?s=400&d=robohash&r=x",
-      "imageName": "Alice_Bennett"
-    }
-  },
-  {
-    "id": "2",
-    "name": "Carlos Ramirez",
-    "age": 35,
-    "isActive": false,
-    "joinDate": "2022-11-04",
-    "email": "carlos.ramirez@example.com",
-    "avatar": { "imageId": "LkT9Vn4", "imageName": "Carlos_Ramirez" }
-  },
-  {
-    "id": "3",
-    "name": "Priya Sharma",
-    "age": 31,
-    "isActive": true,
-    "joinDate": "2023-03-27",
-    "email": "priya.sharma@example.com",
-    "avatar": { "imageId": "Qp8Lm93", "imageName": "Priya_Sharma" }
-  },
-  {
     "id": "4",
     "name": "Liam O'Connor",
     "age": 42,
     "isActive": true,
     "joinDate": "2021-08-19",
     "email": "liam.oconnor@example.com",
-    "avatar": { "imageId": "No5Zt78", "imageName": "Liam_OConnor" }
+    "avatar": { "imageId": "83aoGyM", "imageName": "Liam_OConnor" }
   }
 ]

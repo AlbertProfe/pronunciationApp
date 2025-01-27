@@ -8,7 +8,7 @@ export default function HeaderSection(){
         <h2>Practice Real-World Memes in your social media</h2>
         <img
           className="avatar"
-          src="./public/cat-meme.jpeg"
+          src="./src/assets/cat-meme.jpeg"
           alt="Practice Real-World Meme Injections"
         />
         <ul>
