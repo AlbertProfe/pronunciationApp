@@ -31,7 +31,7 @@ export default function User() {
         </Typography>
         {user ? (
           
-            <Card className="userCard"
+            <Card 
               sx={{
                 background:
                   "linear-gradient(135deg,rgb(101, 246, 174) 0%,rgb(18, 138, 122) 100%)", // Added gradient background

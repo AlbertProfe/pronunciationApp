@@ -6,8 +6,12 @@ import {
   Typography,
   Container,
   Grid,
+  Accordion,
+  AccordionSummary, 
+  AccordionDetails
 } from "@mui/material";
 import LevelButton from "./Button.jsx"; // Import LevelButton component
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore"; //this is for the expand of the synonyms accordion
 import { fetchWords } from "./data-api";
 
 export default function WordList() {
@@ -48,13 +52,15 @@ export default function WordList() {
         >
           Word List
         </Typography>
-        <LevelButton onFilterChange={handleFilterChange} /> {/* Pass handleFilterChange to LevelButton */}
+        <LevelButton onFilterChange={handleFilterChange} />{" "}
+        {/* Pass handleFilterChange to LevelButton */}
         <Grid container spacing={2}>
           {filteredWords.map((word) => (
             <Grid item xs={12} sm={6} md={4} key={word.id}>
               <Card
                 sx={{
-                  background: "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
+                  background:
+                    "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
                   backdropFilter: "blur(10px)",
                   boxShadow: "0 4px 6px rgba(186, 10, 202, 0.56)",
                   transition: "0.3s",
@@ -65,7 +71,10 @@ export default function WordList() {
                 }}
               >
                 <CardContent>
-                  <Typography variant="body2" sx={{ color: "rgb(107, 59, 151)" }}>
+                  <Typography
+                    variant="body2"
+                    sx={{ color: "rgb(107, 59, 151)" }}
+                  >
                     {word.theme}
                   </Typography>
                   <Typography
@@ -77,15 +86,25 @@ export default function WordList() {
                   </Typography>
                   <Typography variant="body2" sx={{ color: "rgb(0, 0, 0)" }}>
                     <p>Pronunciation: {word.phonetic}</p>
-                    <p>
-                      Synonyms:{" "}
-                      {word.synonym.map((syn, index) => (
-                        <span key={index}>
-                          {syn}
-                          {index < word.synonym.length - 1 ? ", " : ""}
-                        </span>
-                      ))}
-                    </p>
+                    <Accordion>
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                      >
+                        <Typography>Synonyms</Typography>
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <Typography>
+                          {word.synonym.map((syn, index) => (
+                            <span key={index}>
+                              {syn}
+                              {index < word.synonym.length - 1 ? ", " : ""}
+                            </span>
+                          ))}
+                        </Typography>
+                      </AccordionDetails>
+                    </Accordion>
                   </Typography>
                 </CardContent>
               </Card>
