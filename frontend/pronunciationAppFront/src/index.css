@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Roboto, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,18 +13,31 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #4b6cb7, #182848);
-  color: #F0F4F8;  /* Soft light gray text */
-  line-height: 1.6;
-  letter-spacing: 0.5px;
+  margin: 0;
+  
+  background: linear-gradient(to right, #8e44ad, #3498db);
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
 }
 
-
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-
-
 

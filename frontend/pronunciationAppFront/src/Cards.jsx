@@ -6,17 +6,22 @@ import {
   Typography,
   Container,
   Grid,
+  Button 
 } from "@mui/material";
+
 import { fetchWords } from "./data-api.js";
 
 export default function WordList() {
   const [words, setWords] = useState([]);
+  const [filteredWords, setFilteredWords] = useState([]);
+  const [level, setLevel] = useState("ALL");
 
   useEffect(() => {
     const getWords = async () => {
       try {
         const data = await fetchWords();
         setWords(data);
+        setFilteredWords(data); // Mostrar todas las palabras al inicio
       } catch (error) {
         console.error("Failed to fetch words:", error);
       }
@@ -24,6 +29,17 @@ export default function WordList() {
 
     getWords();
   }, []);
+
+  // Maneja el filtro según la dificultad seleccionada
+  const handleFilter = (level) => {
+    setLevel(level);
+    if (level === "ALL") {
+      setFilteredWords(words);
+    } else {
+      const filtered = words.filter((word) => word.level === level);
+      setFilteredWords(filtered);
+    }
+  };
 
   return (
     <Container maxWidth="md">
@@ -34,10 +50,28 @@ export default function WordList() {
           gutterBottom
           sx={{ color: "#F0F4F8" }}
         >
-          Word List
+          Word Filter
         </Typography>
+
+        {/* Botones para filtrar */}
+        <div className="flex gap-2 mb-4">
+          <Button onClick={() => handleFilter("ALL")} variant="outline">
+            All
+          </Button>
+          <Button onClick={() => handleFilter("🟢 EASY")} variant="outline">
+            Easy 🟢
+          </Button>
+          <Button onClick={() => handleFilter("🟠 MEDIUM")} variant="outline">
+            Medium 🟠
+          </Button>
+          <Button onClick={() => handleFilter("🔴 HARD")} variant="outline">
+            Hard 🔴
+          </Button>
+        </div>
+
+        {/* Lista de palabras */}
         <Grid container spacing={2}>
-          {words.map((word) => (
+          {filteredWords.map((word) => (
             <Grid item xs={12} sm={6} md={4} key={word.id}>
               <Card
                 sx={{
@@ -62,13 +96,12 @@ export default function WordList() {
                   <Typography variant="body2" sx={{ color: "#B0B8C1" }}>
                     Pronunciation: {word.pronunciation} <br />
                     Phonetic: {word.phonetic} <br />
-                    Synonym : {word.synonym} <br />                    
                     Theme: {word.theme} <br />
-                    Level: {word.level} 
+                    Level: {word.level}
                   </Typography>
                 </CardContent>
               </Card>
-            // </Grid>
+            </Grid>
           ))}
         </Grid>
       </Box>

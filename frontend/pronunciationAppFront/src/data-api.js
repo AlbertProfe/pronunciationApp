@@ -1,11 +1,11 @@
 // api.js
 import axios from "axios";
 
-const BASE_URL = "https://714730c5-ed80-4de5-9392-6abaf70cb51c.mock.pstmn.io";
+const BASE_URL = "https://c7a98a5b-adbe-4893-ac26-6ea827cccc21.mock.pstmn.io/";
 
 export const fetchWords = async () => {
   try {
-    const response = await axios.get(`${BASE_URL}/words`);
+    const response = await axios.get(`${BASE_URL}/list`);
     return response.data.words;
   } catch (error) {
     console.error("Error fetching words:", error);
