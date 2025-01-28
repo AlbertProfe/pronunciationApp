@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Box, Typography, Avatar, Container, Card, CardContent } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Avatar,
+  Container,
+  Card,
+  CardContent,
+} from "@mui/material";
 import { fetchUser } from "./data-api";
 
 export default function User() {
@@ -30,32 +37,52 @@ export default function User() {
           Your Profile:
         </Typography>
         {user ? (
-          
-            <Card 
+          <Card
+            sx={{
+              background:
+                "linear-gradient(135deg,rgb(101, 246, 174) 0%,rgb(18, 138, 122) 100%)", // Added gradient background
+              backdropFilter: "blur(10px)",
+              boxShadow: "0 4px 6px rgba(10, 180, 202, 0.75)",
+              transition: "0.3s",
+              "&:hover": {
+                transform: "translateY(-5px)",
+                boxShadow: "0 6px 8px rgba(5, 238, 255, 0.89)",
+              },
+            }}
+          >
+            <CardContent
               sx={{
-                background:
-                  "linear-gradient(135deg,rgb(101, 246, 174) 0%,rgb(18, 138, 122) 100%)", // Added gradient background
-                backdropFilter: "blur(10px)",
-                boxShadow: "0 4px 6px rgba(10, 180, 202, 0.75)",
-                transition: "0.3s",
-                "&:hover": {
-                  transform: "translateY(-5px)",
-                  boxShadow: "0 6px 8px rgba(5, 238, 255, 0.89)",
-                },
+                display:"flex",
+                flex:"1",
+                textAlign: "left",
+                flexDirection: "row",
+                gap:"1rem",
+                justifyContent: "center",              
               }}
             >
-              <CardContent>
+              <div>
+                <Avatar
+                  src={`https://i.imgur.com/${user.avatar.imageId}.jpg`}
+                  alt={user.name}
+                  sx={{
+                    width: "200",
+                    height: "200",
+                    objectFill: "fit"
+                  }}
+                />
+              </div>
+              <div>
                 <Typography variant="body2" sx={{ color: "rgb(0, 0, 0)" }}>
                   Name: {user.name}
                 </Typography>
-                <Avatar src={`https://i.imgur.com/${user.avatar.imageId}.jpg`} alt={user.name} />
+
                 <Typography variant="body2" sx={{ color: "rgb(0, 0, 0)" }}>
                   <p>Age: {user.age}</p>
                   <p>Email: {user.email}</p>
                 </Typography>
-              </CardContent>
-            </Card>
-
+              </div>
+            </CardContent>
+          </Card>
         ) : (
           <Typography variant="body2" sx={{ color: "rgb(0, 0, 0)" }}>
             Loading...

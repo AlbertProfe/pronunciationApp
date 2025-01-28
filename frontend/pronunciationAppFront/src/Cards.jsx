@@ -7,11 +7,13 @@ import {
   Container,
   Grid,
   Accordion,
-  AccordionSummary, 
-  AccordionDetails
+  AccordionSummary,
+  AccordionDetails,
+  IconButton,
 } from "@mui/material";
 import LevelButton from "./Button.jsx"; // Import LevelButton component
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore"; //this is for the expand of the synonyms accordion
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import { fetchWords } from "./data-api";
 
 export default function WordList() {
@@ -86,6 +88,9 @@ export default function WordList() {
                   </Typography>
                   <Typography variant="body2" sx={{ color: "rgb(0, 0, 0)" }}>
                     <p>Pronunciation: {word.phonetic}</p>
+                    <IconButton aria-label="play/pause">
+                      <PlayArrowIcon />
+                    </IconButton>
                     <Accordion>
                       <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
