@@ -8,7 +8,7 @@ return (
       <h2>Practice Real-World Conversations</h2>
       <img
         className="avatar"
-        src="../src/assets/british.gif"
+        src="../src/assets/dancing.gif"
         alt="Practice Real-World Conversations"
       />
       <ul>
