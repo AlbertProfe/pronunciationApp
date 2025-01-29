@@ -32,7 +32,7 @@ const UsersList = () => {
             <ul>
                 {users.map((user) => (
                     <li key={user.id}>
-                        <p>{user.avatar}</p>
+                        <img src={user.avatar} alt={`${user.name}'s avatar`} />
                         <p>Name: {user.name}</p>
                         <p>Email: {user.email}</p>
                     </li>
