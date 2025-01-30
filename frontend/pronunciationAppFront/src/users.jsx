@@ -28,15 +28,15 @@ export default function UsersList  ()  {
     return (
            
             <div>
-                <h1>User</h1>
+                <h1>User:</h1>
                 <ul>
                      
                             <Avatar
                             src= {' https://i.imgur.com/3yUKPqF.gif'}
                             alt= {users.name}
                             sx={{
-                                width: "400",
-                                height:"400"
+                                width: "200px",
+                                height:"200px"
 
                             }}
                             />
