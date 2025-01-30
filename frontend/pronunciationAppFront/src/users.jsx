@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { fetchUsers } from "./data-api.js";
-import { Avatar } from "@mui/material";
+import { Avatar, Box } from "@mui/material";
+import "./BoxAnimation.css";
 
 export default function UsersList  ()  {
     const [users, setUsers] = useState([]);
@@ -28,23 +29,40 @@ export default function UsersList  ()  {
     return (
            
             <div>
-                <h1>User:</h1>
-                <ul>
-                     
-                            <Avatar
+            <Box
+            className="animated-box"
+sx={{
+    display: "flex",
+    alignItems: "center", // Alinea el contenido horizontalmente
+    border: "1px solid #ccc",
+    padding: "20px",
+    borderRadius: "10px",
+    maxWidth: "400px",
+    margin: "0 auto",
+    backgroundColor: "black",
+    color: "white", // Asegura que el texto sea visible
+  }}
+            >
+                   <Avatar
                             src= {' https://i.imgur.com/3yUKPqF.gif'}
                             alt= {users.name}
                             sx={{
-                                width: "200px",
-                                height:"200px"
+                                width: "100px",
+                                height:"100px",
+                                marginRight: "20px",
 
                             }}
                             />
-                            <p>Name: {users.name}</p>
+                <h1>User:</h1>
+                <ul>
+                     
+                         
+                            <h2>{users.name}</h2>
                             <p>Email: {users.email}</p>
                         
                     
                 </ul>
+            </Box>    
             </div>
         
     );
