@@ -1,16 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { fetchUsers } from "./data-api.js";
-import {
-    Box,
-    Card,
-    CardContent,
-    Typography,
-    Container,
-    Grid,
-    Button 
-  } from "@mui/material";
+import { Avatar } from "@mui/material";
 
-const UsersList = () => {
+export default function UsersList  ()  {
     const [users, setUsers] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -34,30 +26,26 @@ const UsersList = () => {
     if (error) return <p>{error}</p>;
 
     return (
-        
+           
             <div>
                 <h1>User</h1>
                 <ul>
-                    {users.map((user) => (
-                        <li key={user.id}>
-                            <img
-                                src={user.avatar}
-                                alt={`${user.name}'s avatar`}
-                                style={{
-                                    width: "50px",
-                                    height: "50px",
-                                    borderRadius: "50%",
-                                    marginRight: "15px",
-                                }}
+                     
+                            <Avatar
+                            src= {' https://i.imgur.com/3yUKPqF.gif'}
+                            alt= {users.name}
+                            sx={{
+                                width: "400",
+                                height:"400"
+
+                            }}
                             />
-                            <p>Name: {user.name}</p>
-                            <p>Email: {user.email}</p>
-                        </li>
-                    ))}
+                            <p>Name: {users.name}</p>
+                            <p>Email: {users.email}</p>
+                        
+                    
                 </ul>
             </div>
         
     );
 };
-
-export default UsersList;

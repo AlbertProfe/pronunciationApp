@@ -1,4 +1,3 @@
-// api.js
 import axios from "axios";
 
 const BASE_URL = "https://c7a98a5b-adbe-4893-ac26-6ea827cccc21.mock.pstmn.io/";
@@ -16,9 +15,9 @@ export const fetchWords = async () => {
 export const fetchUsers = async () => {
   try {
     const response = await axios.get(`${BASE_URL}/users`);
-    return response.data;
+    return response.data[0];
   } catch (error) {
-    console.error
+    console.error("Error fetching users:", error);
     throw error;
   }
-  }
+};
