@@ -5,39 +5,31 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Column;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
 @Entity
 public class User {
 
+    // Getters and setters
+    @Setter
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Username is mandatory")
-    @Size(min = 3, max = 50, message = "Username must be between 3 and 50 characters")
     @Column(nullable = false, unique = true)
     private String username;
 
-    @NotBlank(message = "Password is mandatory")
-    @Size(min = 8, message = "Password must be at least 8 characters long")
     @Column(nullable = false)
     private String password;
 
-    @NotBlank(message = "Email is mandatory")
-    @Email(message = "Email should be valid")
     @Column(nullable = false, unique = true)
     private String email;
 
-    @NotBlank(message = "First name is mandatory")
-    @Size(max = 50, message = "First name must be less than 50 characters")
     @Column(nullable = false)
     private String firstName;
 
-    @NotBlank(message = "Last name is mandatory")
-    @Size(max = 50, message = "Last name must be less than 50 characters")
     @Column(nullable = false)
     private String lastName;
 
@@ -53,52 +45,38 @@ public class User {
         this.lastName = lastName;
     }
 
-    // Getters and setters
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
     public void setUsername(String username) {
+        if (username == null || username.length() < 3 || username.length() > 50) {
+            throw new IllegalArgumentException("Username must be between 3 and 50 characters");
+        }
         this.username = username;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
     public void setPassword(String password) {
+        if (password == null || password.length() < 8) {
+            throw new IllegalArgumentException("Password must be at least 8 characters long");
+        }
         this.password = password;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
     public void setEmail(String email) {
+        if (email == null || !email.matches("^[A-Za-z0-9+_.-]+@(.+)$")) {
+            throw new IllegalArgumentException("Email should be valid");
+        }
         this.email = email;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
     public void setFirstName(String firstName) {
+        if (firstName == null || firstName.length() > 50) {
+            throw new IllegalArgumentException("First name must be less than 50 characters");
+        }
         this.firstName = firstName;
     }
 
-    public String getLastName() {
-        return lastName;
-    }
-
     public void setLastName(String lastName) {
+        if (lastName == null || lastName.length() > 50) {
+            throw new IllegalArgumentException("Last name must be less than 50 characters");
+        }
         this.lastName = lastName;
     }
 
