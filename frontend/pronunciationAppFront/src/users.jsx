@@ -40,7 +40,7 @@ sx={{
     maxWidth: "400px",
     margin: "0 auto",
     backgroundColor: "black",
-    color: "white", // Asegura que el texto sea visible
+    color: "white", 
   }}
             >
                    <Avatar
@@ -58,7 +58,7 @@ sx={{
                      
                          
                             <h2>{users.name}</h2>
-                            <p>Email: {users.email}</p>
+                            <p> {users.email}</p>
                         
                     
                 </ul>
