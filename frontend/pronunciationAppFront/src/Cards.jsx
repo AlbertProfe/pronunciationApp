@@ -77,7 +77,7 @@ export default function WordList() {
           variant="h4"
           component="h1"
           gutterBottom
-          sx={{ color: "#F0F4F8" }}
+          sx={{ color: "#fffff" }}
         >
           Word Filter
         </Typography>
@@ -118,7 +118,7 @@ export default function WordList() {
                   <Typography
                     variant="h6"
                     component="div"
-                    sx={{ color: "#F0F4F8" }}
+                    sx={{ color: "#fffff" }}
                   >
                     {word.word}
                   </Typography>
@@ -131,7 +131,7 @@ export default function WordList() {
                     <Tab label="Synonyms" />
                   </Tabs>
                   <TabPanel value={tabValue} index={0}>
-                    <Typography variant="body2" sx={{ color: "#B0B8C1" }}>
+                    <Typography variant="body2" sx={{ color: "#fffff" }}>
                       Pronunciation: {word.pronunciation} <br />
                       Phonetic: {word.phonetic} <br />
                       Theme: {word.theme} <br />
@@ -139,7 +139,7 @@ export default function WordList() {
                     </Typography>
                   </TabPanel>
                   <TabPanel value={tabValue} index={1}>
-                    <Typography variant="body2" sx={{ color: "#B0B8C1" }}>
+                    <Typography variant="body2" sx={{ color: "#FFFFF" }}>
                       Synonyms: {word.synonym}
                     </Typography>
                   </TabPanel>
