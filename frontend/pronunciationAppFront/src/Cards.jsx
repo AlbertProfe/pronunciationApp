@@ -13,7 +13,7 @@ import {
 
 import { fetchWords } from "./data-api.js";
 
-// Componente TabPanel personalizado
+// Componente de la pestaña
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -45,7 +45,7 @@ export default function WordList() {
       try {
         const data = await fetchWords();
         setWords(data);
-        setFilteredWords(data); // Mostrar todas las palabras al inicio
+        setFilteredWords(data); 
       } catch (error) {
         console.error("Failed to fetch words:", error);
       }
@@ -54,7 +54,7 @@ export default function WordList() {
     getWords();
   }, []);
 
-  // Maneja el filtro según la dificultad seleccionada
+  // filtro de la dificultad 
   const handleFilter = (level) => {
     setLevel(level);
     if (level === "ALL") {
@@ -65,7 +65,7 @@ export default function WordList() {
     }
   };
 
-  // Maneja el cambio de pestaña
+  // cambio de pestaña
   const handleTabChange = (event, newValue) => {
     setTabValue(newValue);
   };

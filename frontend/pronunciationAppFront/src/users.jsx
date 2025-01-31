@@ -33,7 +33,7 @@ export default function UsersList  ()  {
             className="animated-box"
 sx={{
     display: "flex",
-    alignItems: "center", // Alinea el contenido horizontalmente
+    alignItems: "center", 
     border: "1px solid #ccc",
     padding: "20px",
     borderRadius: "10px",
