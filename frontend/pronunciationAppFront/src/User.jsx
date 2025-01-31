@@ -39,6 +39,7 @@ export default function User() {
         {user ? (
           <Card
             sx={{
+              display:"inline-block",
               background:
                 "linear-gradient(135deg,rgb(101, 246, 174) 0%,rgb(18, 138, 122) 100%)", // Added gradient background
               backdropFilter: "blur(10px)",
@@ -57,7 +58,7 @@ export default function User() {
                 textAlign: "left",
                 flexDirection: "row",
                 gap:"1rem",
-                justifyContent: "center",              
+                alignItems:"center"               
               }}
             >
               <div>
@@ -65,9 +66,8 @@ export default function User() {
                   src={`https://i.imgur.com/${user.avatar.imageId}.jpg`}
                   alt={user.name}
                   sx={{
-                    width: "200",
-                    height: "200",
-                    objectFill: "fit"
+                    width: "150px",
+                    height: "150px",
                   }}
                 />
               </div>
