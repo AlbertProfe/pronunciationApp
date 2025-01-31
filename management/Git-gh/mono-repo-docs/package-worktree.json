@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start:react": "cd ../frontend-worktree/pronunciationAppFront && npm run dev",
+    "start:spring": "cd ../backend-worktree/pronunciationAppBack && ./mvnw spring-boot:run",
+    "start": "concurrently \"npm run start:react\" \"npm run start:spring\"",
+    "update-worktrees": "git worktree add -f ../frontend-worktree frontend && git worktree add -f ../backend-worktree backend"
+  }
+}

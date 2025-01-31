@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start:react": "git checkout frontend && cd pronunciationAppFront && npm run dev",
+    "start:spring": "git checkout backend && cd pronunciationAppBack && ./mvnw spring-boot:run",
+    "start": "concurrently \"npm run start:react\" \"npm run start:spring\""
+  }
+}
+
