@@ -1,0 +1,404 @@
+{
+    "words": [
+        {
+            "id": 1,
+            "word": "Worcestershire",
+            "theme": "Places",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈwʊs.tə.ʃɪə/",
+            "synonym": "County"
+        },
+        {
+            "id": 2,
+            "word": "Anemone",
+            "theme": "Nature",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/əˈnem.ə.ni/",
+            "synonym": "Sea flower"
+        },
+        {
+            "id": 3,
+            "word": "Colonel",
+            "theme": "Ranks",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈkɜːr.nəl/",
+            "synonym": "Officer"
+        },
+        {
+            "id": 4,
+            "word": "Rural",
+            "theme": "Places",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/ˈrʊə.rəl/",
+            "synonym": "Countryside"
+        },
+        {
+            "id": 5,
+            "word": "Squirrel",
+            "theme": "Animals",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈskwɪr.əl/",
+            "synonym": "Rodent"
+        },
+        {
+            "id": 6,
+            "word": "February",
+            "theme": "Time",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/ˈfeb.ruː.er.i/",
+            "synonym": "Month"
+        },
+        {
+            "id": 7,
+            "word": "Quinoa",
+            "theme": "Food",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/ˈkiːn.wɑː/",
+            "synonym": "Grain"
+        },
+        {
+            "id": 8,
+            "word": "Coup",
+            "theme": "Politics",
+            "level": "🔴 HARD",
+            "phonetic": "/kuː/",
+            "synonym": "Overthrow"
+        },
+        {
+            "id": 9,
+            "word": "Schedule",
+            "theme": "Work",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/ˈʃed.juːl/ (UK), /ˈskedʒ.uːl/ (US)",
+            "synonym": "Timetable"
+        },
+        {
+            "id": 10,
+            "word": "Penguin",
+            "theme": "Animals",
+            "level": "🟢 EASY",
+            "phonetic": "/ˈpɛŋ.ɡwɪn/",
+            "synonym": "Bird"
+        },
+        {
+            "id": 11,
+            "word": "Debris",
+            "theme": "Nature",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈdeɪ.briː/",
+            "synonym": "Rubble"
+        },
+        {
+            "id": 12,
+            "word": "Enthusiasm",
+            "theme": "Feelings",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/ɪnˈθjuː.zi.æz.əm/",
+            "synonym": "Excitement"
+        },
+        {
+            "id": 13,
+            "word": "Gauge",
+            "theme": "Measurements",
+            "level": "🔴 HARD",
+            "phonetic": "/ɡeɪdʒ/",
+            "synonym": "Measure"
+        },
+        {
+            "id": 14,
+            "word": "Mischievous",
+            "theme": "Behavior",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈmɪs.tʃə.vəs/",
+            "synonym": "Naughty"
+        },
+        {
+            "id": 15,
+            "word": "Onomatopoeia",
+            "theme": "Language",
+            "level": "🔴 HARD",
+            "phonetic": "/ˌɒn.əˌmæt.əˈpiː.ə/",
+            "synonym": "Sound word"
+        },
+        {
+            "id": 16,
+            "word": "Epitome",
+            "theme": "Descriptions",
+            "level": "🔴 HARD",
+            "phonetic": "/ɪˈpɪt.ə.mi/",
+            "synonym": "Perfect example"
+        },
+        {
+            "id": 17,
+            "word": "Choir",
+            "theme": "Music",
+            "level": "🔴 HARD",
+            "phonetic": "/kwaɪər/",
+            "synonym": "Chorus"
+        },
+        {
+            "id": 18,
+            "word": "Plough",
+            "theme": "Agriculture",
+            "level": "🔴 HARD",
+            "phonetic": "/plaʊ/",
+            "synonym": "Tool"
+        },
+        {
+            "id": 19,
+            "word": "Indict",
+            "theme": "Law",
+            "level": "🔴 HARD",
+            "phonetic": "/ɪnˈdaɪt/",
+            "synonym": "Accuse"
+        },
+        {
+            "id": 20,
+            "word": "Hierarchy",
+            "theme": "Organizations",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/ˈhaɪə.rɑː.ki/",
+            "synonym": "Ranking"
+        },
+        {
+            "id": 21,
+            "word": "Yacht",
+            "theme": "Transport",
+            "level": "🔴 HARD",
+            "phonetic": "/jɒt/",
+            "synonym": "Boat"
+        },
+        {
+            "id": 22,
+            "word": "Subtle",
+            "theme": "Descriptions",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈsʌt.l/",
+            "synonym": "Delicate"
+        },
+        {
+            "id": 23,
+            "word": "Sergeant",
+            "theme": "Ranks",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/ˈsɑː.dʒənt/",
+            "synonym": "Officer"
+        },
+        {
+            "id": 24,
+            "word": "Rendezvous",
+            "theme": "Meetings",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈrɒn.deɪ.vuː/",
+            "synonym": "Meeting point"
+        },
+        {
+            "id": 25,
+            "word": "Aisle",
+            "theme": "Places",
+            "level": "🔴 HARD",
+            "phonetic": "/aɪl/",
+            "synonym": "Corridor"
+        },
+        {
+            "id": 26,
+            "word": "Hyperbole",
+            "theme": "Language",
+            "level": "🔴 HARD",
+            "phonetic": "/haɪˈpɜː.bəl.i/",
+            "synonym": "Exaggeration"
+        },
+        {
+            "id": 27,
+            "word": "Anonymous",
+            "theme": "Identity",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/əˈnɒn.ɪ.məs/",
+            "synonym": "Nameless"
+        },
+        {
+            "id": 28,
+            "word": "Phenomenon",
+            "theme": "Science",
+            "level": "🔴 HARD",
+            "phonetic": "/fəˈnɒm.ɪ.nən/",
+            "synonym": "Event"
+        },
+        {
+            "id": 29,
+            "word": "Cliché",
+            "theme": "Language",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/ˈkliː.ʃeɪ/",
+            "synonym": "Overused idea"
+        },
+        {
+            "id": 30,
+            "word": "Fuchsia",
+            "theme": "Colors",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈfjuː.ʃə/",
+            "synonym": "Purple-pink"
+        },
+        {
+            "id": 31,
+            "word": "Vicinity",
+            "theme": "Places",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/vəˈsɪn.ɪ.ti/",
+            "synonym": "Nearby area"
+        },
+        {
+            "id": 32,
+            "word": "Debut",
+            "theme": "Performances",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/ˈdeɪ.bju/",
+            "synonym": "First appearance"
+        },
+        {
+            "id": 33,
+            "word": "Cache",
+            "theme": "Technology",
+            "level": "🔴 HARD",
+            "phonetic": "/kæʃ/",
+            "synonym": "Storage"
+        },
+        {
+            "id": 34,
+            "word": "Genre",
+            "theme": "Art",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈʒɒn.rə/",
+            "synonym": "Category"
+        },
+        {
+            "id": 35,
+            "word": "Debacle",
+            "theme": "Events",
+            "level": "🔴 HARD",
+            "phonetic": "/deɪˈbɑː.kl/",
+            "synonym": "Failure"
+        },
+        {
+            "id": 36,
+            "word": "Sovereign",
+            "theme": "Politics",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/ˈsɒv.rɪn/",
+            "synonym": "Monarch"
+        },
+        {
+            "id": 37,
+            "word": "Entrepreneur",
+            "theme": "Business",
+            "level": "🔴 HARD",
+            "phonetic": "/ˌɒn.trə.prəˈnɜːr/",
+            "synonym": "Businessperson"
+        },
+        {
+            "id": 38,
+            "word": "Genre",
+            "theme": "Art",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈʒɒn.rə/",
+            "synonym": "Category"
+        },
+        {
+            "id": 39,
+            "word": "Aesthetic",
+            "theme": "Art",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/esˈθet.ɪk/",
+            "synonym": "Style"
+        },
+        {
+            "id": 40,
+            "word": "Gnaw",
+            "theme": "Actions",
+            "level": "🔴 HARD",
+            "phonetic": "/nɔː/",
+            "synonym": "Chew"
+        },
+        {
+            "id": 41,
+            "word": "Surveillance",
+            "theme": "Technology",
+            "level": "🔴 HARD",
+            "phonetic": "/sɜːˈveɪ.ləns/",
+            "synonym": "Monitoring"
+        },
+        {
+            "id": 42,
+            "word": "Segue",
+            "theme": "Transitions",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈseɡ.weɪ/",
+            "synonym": "Transition"
+        },
+        {
+            "id": 43,
+            "word": "Fluorescent",
+            "theme": "Science",
+            "level": "🔴 HARD",
+            "phonetic": "/flɔːˈres.ənt/",
+            "synonym": "Glowing"
+        },
+        {
+            "id": 44,
+            "word": "Vengeance",
+            "theme": "Revenge",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/ˈven.dʒəns/",
+            "synonym": "Revenge"
+        },
+        {
+            "id": 45,
+            "word": "Colonel",
+            "theme": "Ranks",
+            "level": "🔴 HARD",
+            "phonetic": "/ˈkɜːr.nəl/",
+            "synonym": "Officer"
+        },
+        {
+            "id": 46,
+            "word": "Connoisseur",
+            "theme": "Expertise",
+            "level": "🔴 HARD",
+            "phonetic": "/ˌkɒn.əˈsɜːr/",
+            "synonym": "Expert"
+        },
+        {
+            "id": 47,
+            "word": "Zucchini",
+            "theme": "Food",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/zuːˈkiː.ni/",
+            "synonym": "Courgette"
+        },
+        {
+            "id": 48,
+            "word": "Parliament",
+            "theme": "Politics",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/ˈpɑː.lɪə.mənt/",
+            "synonym": "Government"
+        },
+        {
+            "id": 49,
+            "word": "Acquiesce",
+            "theme": "Agreement",
+            "level": "🔴 HARD",
+            "phonetic": "/ˌæk.wiˈes/",
+            "synonym": "Comply"
+        },
+        {
+            "id": 50,
+            "word": "Camouflage",
+            "theme": "Nature",
+            "level": "🟠 MEDIUM",
+            "phonetic": "/ˈkæm.ə.flɑːʒ/",
+            "synonym": "Concealment"
+        }
+    ]
+}
