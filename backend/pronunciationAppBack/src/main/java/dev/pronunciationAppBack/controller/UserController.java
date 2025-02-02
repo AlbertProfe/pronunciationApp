@@ -41,7 +41,7 @@ public class UserController {
         return UserRepository.getUserById(id);
     }
 
-    @PostMapping("(createUser)")
+    @PostMapping("createUser")
     public User createUser(@RequestBody User user) {
         
         
