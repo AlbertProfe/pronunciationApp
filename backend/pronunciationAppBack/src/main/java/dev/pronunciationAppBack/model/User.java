@@ -1,8 +1,10 @@
 package dev.pronunciationAppBack.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "APP_USERS") // Because USER is an H2 reserved word
 public class User {
     
     @Id
