@@ -1,25 +1,20 @@
 package dev.pronunciationAppBack.controller;
+
 import dev.pronunciationAppBack.model.User;
-import dev.pronunciationAppBack.repository.UserRepository;
+import dev.pronunciationAppBack.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-
-
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
 
     @Autowired
-    private UserRepository UserRepository;
-    
+    private UserService userService;
+
     @GetMapping("/hello")
     public String hello() {
         return "Hello Albert, this is a test";
@@ -27,39 +22,48 @@ public class UserController {
 
     @GetMapping
     public List<User> getAllUsers() {
-        List<User> users = UserRepository.findAll();
-        System.out.println("Number of users: " + users.size());
-        for (User user: users) {
-            System.out.println("User: " + user);
+        return userService.getAllUsers();
     }
 
-    return users;
-    }
-    
     @GetMapping("/{id}")
     public User getUserById(@PathVariable String id) {
-        return UserRepository.getUserById(id);
+        Optional<User> user = userService.getUserById(id);
+
+        if (user.isPresent()) {
+            return user.get();
+        } else {
+            return null;
+        }
     }
 
-    @PostMapping("createUser")
+    @PostMapping("/createUser")
     public User createUser(@RequestBody User user) {
-        
-        
-        return UserRepository.save(user);
+        return userService.createUser(user);
+    }
+
+    @PutMapping("/{id}")
+    public User updateUser(@PathVariable String id, @RequestBody User user) {
+        if (!userService.existsById(id)) {
+            return null;
+        }
+
+        user.setId(id);
+        return userService.updateUser(user);
     }
 
     @DeleteMapping("/{id}")
-    public String deleteUser(@PathVariable("id") String idToDelete) {
-        UserRepository.deleteById(idToDelete);
-        return "User" + idToDelete + "deleted.";
+    public String deleteUser(@PathVariable String id) {
+        if (userService.existsById(id)) {
+            userService.deleteUser(id);
+            return "User deleted";
+        } else {
+            return "User not found";
+        }
     }
 
     @DeleteMapping
     public String deleteAllUsers() {
-        UserRepository.deleteAll();
+        userService.deleteAllUsers();
         return "All users deleted";
     }
-    
-
-    
 }
