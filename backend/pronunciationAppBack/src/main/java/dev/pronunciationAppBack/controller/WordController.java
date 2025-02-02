@@ -45,11 +45,11 @@ public class WordController {
     }
 
     @PostMapping("/createWord")
-    public ResponseEntity<Word> createWord(@RequestBody Word word) {
-        Word createdWord = wordRepository.save(word);
-        HttpHeaders headers = getCommonHeaders("Create a new word");
+        public ResponseEntity<Word> createWord(@RequestBody Word word) {
+            Word createdWord = wordRepository.save(word);
+            HttpHeaders headers = getCommonHeaders("Create a new word");
 
-        return new ResponseEntity<>(createdWord, headers, HttpStatus.CREATED);
+            return new ResponseEntity<>(createdWord, headers, HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
