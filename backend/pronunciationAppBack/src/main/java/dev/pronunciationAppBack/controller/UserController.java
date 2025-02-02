@@ -36,7 +36,7 @@ public class UserController {
     return users;
     }
     
-    @GetMapping(/{id})
+    @GetMapping("/{id}")
     public User getUserById(@PathVariable String id) {
         return UserRepository.getUserById(id);
     }
