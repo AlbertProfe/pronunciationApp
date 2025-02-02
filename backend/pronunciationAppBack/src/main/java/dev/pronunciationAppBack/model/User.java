@@ -57,8 +57,12 @@ public class User {
         this.password = password;
     }
 
-    public boolean setActive() {
+    public boolean isActive() {
         return isActive;
+    }
+
+    public void setActive(boolean active) {
+        this.isActive = active;
     }
 
     @Override
