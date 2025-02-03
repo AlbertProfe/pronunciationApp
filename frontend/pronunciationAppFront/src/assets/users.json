@@ -1,0 +1,11 @@
+[
+  {
+    "id": "4",
+    "name": "Liam O'Connor",
+    "age": 42,
+    "isActive": true,
+    "joinDate": "2021-08-19",
+    "email": "liam.oconnor@example.com",
+    "avatar": { "imageId": "83aoGyM", "imageName": "Liam_OConnor" }
+  }
+]

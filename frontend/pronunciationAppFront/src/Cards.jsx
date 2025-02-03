@@ -1,0 +1,122 @@
+import { useState, useEffect } from "react";
+import {
+  Box,
+  Card,
+  CardContent,
+  Typography,
+  Container,
+  Grid,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  IconButton,
+} from "@mui/material";
+import LevelButton from "./Button.jsx"; // Import LevelButton component
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore"; //this is for the expand of the synonyms accordion
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import { fetchWords } from "./data-api";
+
+export default function WordList() {
+  const [words, setWords] = useState([]);
+  const [filter, setFilter] = useState("");
+
+  useEffect(() => {
+    const getWords = async () => {
+      try {
+        const data = await fetchWords();
+        setWords(data);
+      } catch (error) {
+        console.error("Failed to fetch words:", error);
+      }
+    };
+
+    getWords();
+  }, []);
+
+  // Function to handle filter change
+  const handleFilterChange = (newFilter) => {
+    setFilter(newFilter);
+  };
+
+  // Filter words based on selected difficulty level
+  const filteredWords = words.filter((word) =>
+    filter ? word.level === filter : true
+  );
+
+  return (
+    <Container maxWidth="md">
+      <Box sx={{ my: 4 }}>
+        <Typography
+          variant="h4"
+          component="h1"
+          gutterBottom
+          sx={{ color: "#F0F4F8" }}
+        >
+          Word List
+        </Typography>
+        <LevelButton onFilterChange={handleFilterChange} />{" "}
+        {/* Pass handleFilterChange to LevelButton */}
+        <Grid container spacing={2}>
+          {filteredWords.map((word) => (
+            <Grid item xs={12} sm={6} md={4} key={word.id}>
+              <Card
+                sx={{
+                  background:
+                    "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
+                  backdropFilter: "blur(10px)",
+                  boxShadow: "0 4px 6px rgba(186, 10, 202, 0.56)",
+                  transition: "0.3s",
+                  "&:hover": {
+                    transform: "translateY(-5px)",
+                    boxShadow: "0 6px 8px rgba(247, 17, 158, 0.64)",
+                  },
+                }}
+              >
+                <CardContent>
+                  <Typography
+                    variant="body2"
+                    sx={{ color: "rgb(107, 59, 151)" }}
+                  >
+                    {word.theme}
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    component="div"
+                    sx={{ color: "#F0F4F8" }}
+                  >
+                    {word.word}
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: "rgb(0, 0, 0)" }}>
+                    <p>Pronunciation: {word.phonetic}</p>
+                    <IconButton aria-label="play/pause">
+                      <PlayArrowIcon />
+                    </IconButton>
+                    <Accordion>
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                      >
+                        <Typography>Synonyms</Typography>
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <Typography>
+                          {word.synonym.map((syn, index) => (
+                            <span key={index}>
+                              {syn}
+                              {index < word.synonym.length - 1 ? ", " : ""}
+                            </span>
+                          ))}
+                        </Typography>
+                      </AccordionDetails>
+                    </Accordion>
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+    </Container>
+  );
+}
