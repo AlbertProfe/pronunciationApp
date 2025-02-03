@@ -1,0 +1,614 @@
+{
+  "words": [
+    {
+      "id": "a5bfc9e07964f8dddeb95fc584cd965d0f55d4f0",
+      "word": "be",
+      "pronunciation": "/biː/",
+      "definition": "To exist or occur; to take place.",
+      "origin": "From Old English 'beon', from Proto-Germanic '*beuną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 2
+    },
+    {
+      "id": "b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1",
+      "word": "have",
+      "pronunciation": "/hæv/",
+      "definition": "To possess, own, or hold.",
+      "origin": "From Old English 'habban', from Proto-Germanic '*habjaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0",
+      "word": "do",
+      "pronunciation": "/duː/",
+      "definition": "To perform or accomplish something.",
+      "origin": "From Old English 'dōn', from Proto-Germanic '*dōną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 2
+    },
+    {
+      "id": "d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9",
+      "word": "say",
+      "pronunciation": "/seɪ/",
+      "definition": "To express in words.",
+      "origin": "From Old English 'secgan', from Proto-Germanic '*sagjaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 3
+    },
+    {
+      "id": "e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8",
+      "word": "go",
+      "pronunciation": "/ɡoʊ/",
+      "definition": "To move from one place to another.",
+      "origin": "From Old English 'gān', from Proto-Germanic '*gāną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 2
+    },
+    {
+      "id": "f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7",
+      "word": "get",
+      "pronunciation": "/ɡɛt/",
+      "definition": "To obtain or receive.",
+      "origin": "From Old Norse 'geta', from Proto-Germanic '*getaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 3
+    },
+    {
+      "id": "a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6",
+      "word": "make",
+      "pronunciation": "/meɪk/",
+      "definition": "To create or produce something.",
+      "origin": "From Old English 'macian', from Proto-Germanic '*makōną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5",
+      "word": "know",
+      "pronunciation": "/noʊ/",
+      "definition": "To be aware of through observation or information.",
+      "origin": "From Old English 'cnāwan', from Proto-Germanic '*knēaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4",
+      "word": "think",
+      "pronunciation": "/θɪŋk/",
+      "definition": "To have a particular opinion or belief.",
+      "origin": "From Old English 'þencan', from Proto-Germanic '*þankijaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 5
+    },
+    {
+      "id": "d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3",
+      "word": "take",
+      "pronunciation": "/teɪk/",
+      "definition": "To lay hold of something.",
+      "origin": "From Old English 'tacan', from Proto-Germanic '*tēkaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2",
+      "word": "see",
+      "pronunciation": "/siː/",
+      "definition": "To perceive with the eyes.",
+      "origin": "From Old English 'sēon', from Proto-Germanic '*sehwaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 3
+    },
+    {
+      "id": "f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1",
+      "word": "come",
+      "pronunciation": "/kʌm/",
+      "definition": "To move toward or arrive at a place.",
+      "origin": "From Old English 'cuman', from Proto-Germanic '*kwemaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0",
+      "word": "use",
+      "pronunciation": "/juːz/",
+      "definition": "To employ for a purpose.",
+      "origin": "From Old French 'user', from Latin 'uti'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 3
+    },
+    {
+      "id": "b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9",
+      "word": "find",
+      "pronunciation": "/faɪnd/",
+      "definition": "To discover something.",
+      "origin": "From Old English 'findan', from Proto-Germanic '*finþaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8",
+      "word": "give",
+      "pronunciation": "/ɡɪv/",
+      "definition": "To freely transfer something to someone.",
+      "origin": "From Old English 'giefan', from Proto-Germanic '*gebaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7",
+      "word": "tell",
+      "pronunciation": "/tɛl/",
+      "definition": "To communicate information.",
+      "origin": "From Old English 'tellan', from Proto-Germanic '*taljaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6",
+      "word": "work",
+      "pronunciation": "/wɜːrk/",
+      "definition": "To perform tasks or duties.",
+      "origin": "From Old English 'weorc', from Proto-Germanic '*werką'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5",
+      "word": "call",
+      "pronunciation": "/kɔːl/",
+      "definition": "To contact someone by phone or shout.",
+      "origin": "From Old Norse 'kalla', from Proto-Germanic '*kallōną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4",
+      "word": "try",
+      "pronunciation": "/traɪ/",
+      "definition": "To attempt to do something.",
+      "origin": "From Old French 'trier', from Late Latin 'tritare'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 3
+    },
+    {
+      "id": "b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3",
+      "word": "ask",
+      "pronunciation": "/æsk/",
+      "definition": "To request information or help.",
+      "origin": "From Old English 'ascian', from Proto-Germanic '*aiskōną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 3
+    },
+    {
+      "id": "c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2",
+      "word": "need",
+      "pronunciation": "/niːd/",
+      "definition": "To require something essential.",
+      "origin": "From Old English 'nēodian', from Proto-Germanic '*nōdijaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1",
+      "word": "feel",
+      "pronunciation": "/fiːl/",
+      "definition": "To experience an emotion or sensation.",
+      "origin": "From Old English 'fēlan', from Proto-Germanic '*fōlijaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0",
+      "word": "become",
+      "pronunciation": "/bɪˈkʌm/",
+      "definition": "To begin to be something.",
+      "origin": "From Old English 'becuman', from Proto-Germanic '*bikwemaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 6
+    },
+    {
+      "id": "f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9",
+      "word": "leave",
+      "pronunciation": "/liːv/",
+      "definition": "To go away from a place.",
+      "origin": "From Old English 'lǣfan', from Proto-Germanic '*laibijaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 5
+    },
+    {
+      "id": "a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8",
+      "word": "put",
+      "pronunciation": "/pʊt/",
+      "definition": "To place something in a specific location.",
+      "origin": "From Old English 'putian', from Proto-Germanic '*putōną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 3
+    },
+    {
+      "id": "b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7",
+      "word": "mean",
+      "pronunciation": "/miːn/",
+      "definition": "To signify or intend to express.",
+      "origin": "From Old English 'mǣnan', from Proto-Germanic '*mainijaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6",
+      "word": "keep",
+      "pronunciation": "/kiːp/",
+      "definition": "To retain possession of something.",
+      "origin": "From Old English 'cēpan', from Proto-Germanic '*kōpijaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5",
+      "word": "let",
+      "pronunciation": "/lɛt/",
+      "definition": "To allow or permit.",
+      "origin": "From Old English 'lǣtan', from Proto-Germanic '*lētaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 3
+    },
+    {
+      "id": "e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4",
+      "word": "begin",
+      "pronunciation": "/bɪˈɡɪn/",
+      "definition": "To start something.",
+      "origin": "From Old English 'beginnan', from Proto-Germanic '*biginnaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 5
+    },
+    {
+      "id": "f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3",
+      "word": "seem",
+      "pronunciation": "/siːm/",
+      "definition": "To appear to be something.",
+      "origin": "From Old Norse 'sœma', from Proto-Germanic '*sōmijaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2",
+      "word": "help",
+      "pronunciation": "/hɛlp/",
+      "definition": "To assist someone.",
+      "origin": "From Old English 'helpan', from Proto-Germanic '*helpaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "a5bfc9e07964f8dddeb95fc584cd965d0f55d4f0",
+      "word": "be",
+      "pronunciation": "/biː/",
+      "definition": "To exist or occur; to take place.",
+      "origin": "From Old English 'beon', from Proto-Germanic '*beuną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 2
+    },
+    {
+      "id": "3b9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "have",
+      "pronunciation": "/hæv/",
+      "definition": "To possess, own, or hold.",
+      "origin": "From Old English 'habban', from Proto-Germanic '*habjaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "4c9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "do",
+      "pronunciation": "/duː/",
+      "definition": "To perform or execute an action.",
+      "origin": "From Old English 'dōn', from Proto-Germanic '*dōną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 2
+    },
+    {
+      "id": "5d9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "say",
+      "pronunciation": "/seɪ/",
+      "definition": "To utter words to convey information.",
+      "origin": "From Old English 'secgan', from Proto-Germanic '*sagjaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 3
+    },
+    {
+      "id": "6e9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "go",
+      "pronunciation": "/ɡoʊ/",
+      "definition": "To move from one place to another.",
+      "origin": "From Old English 'gān', from Proto-Germanic '*gāną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 2
+    },
+    {
+      "id": "7f9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "get",
+      "pronunciation": "/ɡɛt/",
+      "definition": "To obtain or receive something.",
+      "origin": "From Old Norse 'geta', from Proto-Germanic '*getaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 3
+    },
+    {
+      "id": "8a9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "make",
+      "pronunciation": "/meɪk/",
+      "definition": "To create or construct something.",
+      "origin": "From Old English 'macian', from Proto-Germanic '*makōną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "9b9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "know",
+      "pronunciation": "/noʊ/",
+      "definition": "To be aware of or familiar with something.",
+      "origin": "From Old English 'cnāwan', from Proto-Germanic '*knēaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "0c9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "think",
+      "pronunciation": "/θɪŋk/",
+      "definition": "To have a particular opinion or belief.",
+      "origin": "From Old English 'þencan', from Proto-Germanic '*þankijaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 5
+    },
+    {
+      "id": "1d9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "take",
+      "pronunciation": "/teɪk/",
+      "definition": "To lay hold of something.",
+      "origin": "From Old Norse 'taka', from Proto-Germanic '*tēkaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "2e9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "see",
+      "pronunciation": "/siː/",
+      "definition": "To perceive with the eyes.",
+      "origin": "From Old English 'sēon', from Proto-Germanic '*sehwaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 3
+    },
+    {
+      "id": "3f9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "come",
+      "pronunciation": "/kʌm/",
+      "definition": "To move toward or arrive at a place.",
+      "origin": "From Old English 'cuman', from Proto-Germanic '*kwemaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "4a9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "want",
+      "pronunciation": "/wɒnt/",
+      "definition": "To have a desire for something.",
+      "origin": "From Old Norse 'vanta', from Proto-Germanic '*wanatōną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "5b9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "use",
+      "pronunciation": "/juːz/",
+      "definition": "To employ for a purpose.",
+      "origin": "From Old French 'user', from Latin 'uti'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 3
+    },
+    {
+      "id": "6c9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "find",
+      "pronunciation": "/faɪnd/",
+      "definition": "To discover something.",
+      "origin": "From Old English 'findan', from Proto-Germanic '*finþaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "7d9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "give",
+      "pronunciation": "/ɡɪv/",
+      "definition": "To transfer something to someone.",
+      "origin": "From Old English 'giefan', from Proto-Germanic '*gebaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "8e9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "tell",
+      "pronunciation": "/tɛl/",
+      "definition": "To communicate information.",
+      "origin": "From Old English 'tellan', from Proto-Germanic '*taljaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "9f9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "work",
+      "pronunciation": "/wɜːrk/",
+      "definition": "To perform tasks or duties.",
+      "origin": "From Old English 'weorc', from Proto-Germanic '*werką'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "0a9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "call",
+      "pronunciation": "/kɔːl/",
+      "definition": "To contact someone by phone or voice.",
+      "origin": "From Old Norse 'kalla', from Proto-Germanic '*kallōną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "1b9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "try",
+      "pronunciation": "/traɪ/",
+      "definition": "To attempt or make an effort.",
+      "origin": "From Old French 'trier', from Latin 'tritare'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 3
+    },
+    {
+      "id": "2c9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "ask",
+      "pronunciation": "/æsk/",
+      "definition": "To request information or help.",
+      "origin": "From Old English 'ascian', from Proto-Germanic '*aiskōną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 3
+    },
+    {
+      "id": "3d9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "need",
+      "pronunciation": "/niːd/",
+      "definition": "To require something essential.",
+      "origin": "From Old English 'nēodian', from Proto-Germanic '*nōdijaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "4e9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "feel",
+      "pronunciation": "/fiːl/",
+      "definition": "To experience an emotion or sensation.",
+      "origin": "From Old English 'fēlan', from Proto-Germanic '*fōlijaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "5f9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "become",
+      "pronunciation": "/bɪˈkʌm/",
+      "definition": "To begin to be something.",
+      "origin": "From Old English 'becuman', from Proto-Germanic '*bikwemaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 6
+    },
+    {
+      "id": "6a9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "leave",
+      "pronunciation": "/liːv/",
+      "definition": "To go away from a place.",
+      "origin": "From Old English 'lǣfan', from Proto-Germanic '*laibijaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 5
+    },
+    {
+      "id": "7b9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "put",
+      "pronunciation": "/pʊt/",
+      "definition": "To place something in a specific location.",
+      "origin": "From Old English 'putian', from Proto-Germanic '*putōną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 3
+    },
+    {
+      "id": "8c9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "mean",
+      "pronunciation": "/miːn/",
+      "definition": "To signify or indicate something.",
+      "origin": "From Old English 'mǣnan', from Proto-Germanic '*mainijaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "9d9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "keep",
+      "pronunciation": "/kiːp/",
+      "definition": "To retain or continue to have something.",
+      "origin": "From Old English 'cēpan', from Proto-Germanic '*kōpijaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    },
+    {
+      "id": "0e9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "let",
+      "pronunciation": "/lɛt/",
+      "definition": "To allow or permit something.",
+      "origin": "From Old English 'lǣtan', from Proto-Germanic '*lētaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 3
+    },
+    {
+      "id": "1f9f7f9e1b1c1d1e1f1a1b1c1d1e1f1a1b1c1d1e1f",
+      "word": "begin",
+      "pronunciation": "/bɪˈɡɪn/",
+      "definition": "To start or commence something.",
+      "origin": "From Old English 'beginnan', from Proto-Germanic '*biginnaną'",
+      "isActive": true,
+      "addedToDB": "2025-01-28",
+      "Charnumbers": 4
+    }
+  ]
+}
