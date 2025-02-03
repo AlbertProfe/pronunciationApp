@@ -3,10 +3,10 @@
 This is the documentation from the first project in React.
 
 ---
-
 ## 1 - Set all Components
 ---
 First I started to read everything necessary to do in the markdown from the PRA#01 folder and started to structure the project. After that, I set all the existent variables to correct names and imports, then checked the current code to see if there was any mistake to its programming.
+
 ---
 ### 2 - Postman Mockup Server Creation
 ---
@@ -21,14 +21,8 @@ Example from word json:
 >    }
 
 Example from user json:
->  { "id": "4",
->    "name": "Liam O'Connor",
->    "age": 42,
->    "isActive": true,
->    "joinDate": "2021-08-19",
->    "email": "liam.oconnor@example.com",
->    "avatar": { "imageId": "83aoGyM", "imageName": "Liam_OConnor" }
->  }
+
+![userJson](/pronunciationAppFront/documentation/userJson.png)
 
 Then I went to Postman (web or app) and created a mockup server for testing my axios code. There I created a GET request and pasted the words generated. (Later I'd do the same for the users json file)
 
@@ -82,6 +76,7 @@ The other feature was a little transition to make the card jump a little when th
 ---
 ### Animation Libraries
 These could not be implemented because they generated errors in the render. So I talked with our Product Owner and we could discard them for now.
+
 ---
 ### Enhancing Card Features
 Our Cards were really upgraded at this point thanks to CSS, importing Accordions from material and the filtering option for its difficulty. But our Product Owner wanted one more thing and it was adding some interactivity more.
@@ -90,6 +85,7 @@ Watching his example I thought about picking only the playButton to play the aud
 
 >import { Card, CardMedia, IconButton, Typography } from '@mui/material';
 >import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+
 ---
 
 And thus I finished the whole exercise from PRA#01, it made me realized I still need to read more documentation about the components from Material UI and understanding more the useEffect and useState implications in the code.
@@ -108,4 +104,5 @@ Also went to stackoverflow to get info about updates and corrections of imports 
 
 And revisited and checked some of the code programmed and compared it to the one proposed by Github Copilot AI.
 [GithubCopilot-mainPage](https://github.com/features/copilot)
+
 ---
