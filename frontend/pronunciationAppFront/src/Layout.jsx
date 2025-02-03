@@ -1,6 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import { AppBar, Toolbar, Typography, Button, Container } from "@mui/material";
 import { styled } from "@mui/system";
+//import { Style } from "@mui/icons-material";
 
 const StyledLink = styled(Link)({
   color: "#4b6cb7", // Matching the soft light gray text color
@@ -32,7 +33,10 @@ export default function Layout() {
             Home
           </Button>
           <Button component={StyledLink} to="/practice">
-            Practice
+          Practice
+          </Button>
+         <Button component={StyledLink} to="/users">
+          Users 
           </Button>
           <Button component={StyledLink} to="/about">
             About

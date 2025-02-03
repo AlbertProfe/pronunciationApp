@@ -25,6 +25,15 @@ export default function WordList() {
     getWords();
   }, []);
 
+  const getColor = (difficulty) => {
+    switch (difficulty) {
+      case "easy": return "#4CAF50"; // Green
+      case "medium": return "#FFC107"; // Yellow
+      case "hard": return "#F44336"; // Red
+      default: return "rgba(240, 244, 248, 0.1)";
+    }
+  };
+
   return (
     <Container maxWidth="md">
       <Box sx={{ my: 4 }}>
@@ -41,7 +50,7 @@ export default function WordList() {
             <Grid item xs={12} sm={6} md={4} key={word.id}>
               <Card
                 sx={{
-                  backgroundColor: "rgba(240, 244, 248, 0.1)",
+                  backgroundColor: getColor(word.difficulty),
                   backdropFilter: "blur(10px)",
                   boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
                   transition: "0.3s",
@@ -59,7 +68,14 @@ export default function WordList() {
                   >
                     {word.word}
                   </Typography>
-                  <Typography variant="body2" sx={{ color: "#B0B8C1" }}>
+                  <Typography 
+                    variant="h6"
+                    commponen="div"
+                    sx={{ color: "#F0F4F8" }}
+                  >
+                    {word.difficulty}
+                  </Typography> 
+                  <Typography variant="body2" sx={{ color: "#000000" }}>
                     Pronunciation: {word.pronunciation}
                   </Typography>
                 </CardContent>
