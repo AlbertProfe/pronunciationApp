@@ -5,7 +5,7 @@ import Home from './Home.jsx';
 import Layout from './Layout';
 import NoPage from './NoPage';
 import Practice from './Practice';
-import Users from './Users.jsx';
+import User from './User.jsx';
 
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="practice" element={<Practice />} />
-          <Route path="user" element={<Users />} />
+          <Route path="user" element={<User />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<NoPage />} />
         </Route>

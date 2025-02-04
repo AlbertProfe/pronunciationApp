@@ -1,4 +1,4 @@
-import UserCard from './UserCard'
+import UserCard from './UserCard';
 
 export default function Users(){
 
@@ -7,7 +7,6 @@ export default function Users(){
   
   <>
     {" "}
-    <h1>Users</h1>
     <UserCard />
   </>
 
