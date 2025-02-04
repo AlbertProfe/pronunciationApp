@@ -1,63 +1,61 @@
-Aquí tienes la documentación en formato Markdown basada en la información proporcionada:
 
-```markdown
 # PronunciationApp v0.1
 
-## Descripción del Proyecto
+## Project Description
 
-PronunciationApp es una aplicación diseñada para ayudar a los usuarios a mejorar su pronunciación en inglés. La aplicación utiliza una combinación de tecnologías modernas como React, Material-UI, y Axios para proporcionar una experiencia de usuario fluida y atractiva.
+PronunciationApp is an application designed to help users improve their English pronunciation. The app uses a combination of modern technologies such as React, Material-UI, and Axios to provide a smooth and attractive user experience.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
-- **Material-UI (MUI)**: Biblioteca de componentes de React para diseño y estilos.
-- **Axios**: Cliente HTTP para realizar solicitudes a APIs.
-- **Postman Mock Server**: Servidor simulado para pruebas y desarrollo sin necesidad de un backend real.
-- **Hooks**: Para la gestión del estado y efectos secundarios en React.
+- **React**: JavaScript library for building user interfaces.
+- **Material-UI (MUI)**: React component library for design and styles.
+- **Axios**: HTTP client for making API requests.
+- **Postman Mock Server**: Mock server for testing and development without a real backend.
+- **Hooks**: For state management and side effects in React.
 
-## Instalación
+## Installation
 
-Para instalar y ejecutar el proyecto localmente, sigue estos pasos:
+To install and run the project locally, follow these steps:
 
-1. **Clona el repositorio**:
-   ```bash
-   git clone https://github.com/tu-usuario/pronunciationApp.git
-   cd pronunciationApp
-   ```
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/pronunciationApp.git
+    cd pronunciationApp
+    ```
 
-2. **Instala las dependencias**:
-   ```bash
-   npm install
-   ```
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-3. **Inicia el servidor de desarrollo**:
-   ```bash
-   npm run dev
-   ```
+3. **Start the development server**:
+    ```bash
+    npm run dev
+    ```
 
-4. **Abre la aplicación** en tu navegador:
-   ```
-   http://localhost:3000
-   ```
+4. **Open the application** in your browser:
+    ```
+    http://localhost:3000
+    ```
 
-## Estructura del Proyecto
+## Project Structure
 
-- **`src/App.jsx`**: Componente principal de la aplicación.
-- **`src/Cards.jsx`**: Componente que muestra las tarjetas de palabras con su pronunciación.
-- **`src/Header.jsx`**: Componente que muestra la sección de bienvenida y el perfil del usuario.
-- **`src/data-api.js`**: Módulo que maneja las solicitudes a la API.
-- **`src/index.css`**: Estilos globales de la aplicación.
-- **`src/BoxAnimation.css`**: Animaciones CSS para los componentes.
+- **`src/App.jsx`**: Main component of the application.
+- **`src/Cards.jsx`**: Component that displays word cards with their pronunciation.
+- **`src/Header.jsx`**: Component that displays the welcome section and user profile.
+- **`src/data-api.js`**: Module that handles API requests.
+- **`src/index.css`**: Global styles for the application.
+- **`src/BoxAnimation.css`**: CSS animations for components.
 
-## Uso de Material-UI
+## Using Material-UI
 
-Para utilizar Material-UI en el proyecto, se han instalado los siguientes paquetes:
+To use Material-UI in the project, the following packages have been installed:
 
 ```bash
 npm install @mui/material @emotion/react @emotion/styled @mui/icons-material @fontsource/roboto
 ```
 
-### Ejemplo de Uso de un Componente de Material-UI
+### Example of Using a Material-UI Component
 
 ```jsx
 import React from 'react';
@@ -65,18 +63,18 @@ import Button from '@mui/material/Button';
 
 function App() {
   return (
-    <Button variant="contained" color="primary">
-      Hello World
-    </Button>
+     <Button variant="contained" color="primary">
+        Hello World
+     </Button>
   );
 }
 
 export default App;
 ```
 
-## Uso de Axios para Fetching de Datos
+## Using Axios for Data Fetching
 
-El proyecto utiliza Axios para realizar solicitudes HTTP a un servidor mock de Postman. Aquí un ejemplo de cómo se realiza una solicitud:
+The project uses Axios to make HTTP requests to a Postman mock server. Here is an example of how to make a request:
 
 ```jsx
 import axios from "axios";
@@ -85,25 +83,25 @@ const BASE_URL = "https://c7a98a5b-adbe-4893-ac26-6ea827cccc21.mock.pstmn.io/";
 
 export const fetchWords = async () => {
   try {
-    const response = await axios.get(`${BASE_URL}/list`);
-    return response.data.words;
+     const response = await axios.get(`${BASE_URL}/list`);
+     return response.data.words;
   } catch (error) {
-    console.error("Error fetching words:", error);
-    throw error;
+     console.error("Error fetching words:", error);
+     throw error;
   }
 };
 ```
 
-## Flujo de Datos
+## Data Flow
 
-1. **Postman Mock Server**: Simula un endpoint de API, proporcionando respuestas predefinidas.
-2. **Axios**: Realiza una solicitud HTTP GET al servidor mock.
-3. **useEffect**: Dispara la solicitud Axios cuando el componente se monta.
-4. **useState**: Almacena los datos obtenidos en el estado del componente.
-5. **words.map()**: Itera sobre el array de palabras almacenado en el estado.
-6. **Render**: Muestra cada palabra como un componente Card de Material-UI en la interfaz de usuario.
+1. **Postman Mock Server**: Simulates an API endpoint, providing predefined responses.
+2. **Axios**: Makes an HTTP GET request to the mock server.
+3. **useEffect**: Triggers the Axios request when the component mounts.
+4. **useState**: Stores the fetched data in the component's state.
+5. **words.map()**: Iterates over the array of words stored in the state.
+6. **Render**: Displays each word as a Material-UI Card component in the user interface.
 
-## Ejemplo de Renderizado de Tarjetas
+## Example of Rendering Cards
 
 ```jsx
 import React, { useState, useEffect } from 'react';
@@ -114,56 +112,46 @@ export default function WordList() {
   const [words, setWords] = useState([]);
 
   useEffect(() => {
-    const getWords = async () => {
-      try {
-        const data = await fetchWords();
-        setWords(data);
-      } catch (error) {
-        console.error('Failed to fetch words:', error);
-      }
-    };
+     const getWords = async () => {
+        try {
+          const data = await fetchWords();
+          setWords(data);
+        } catch (error) {
+          console.error('Failed to fetch words:', error);
+        }
+     };
 
-    getWords();
+     getWords();
   }, []);
 
   return (
-    <Container maxWidth="md">
-      <Grid container spacing={2}>
-        {words.map((word) => (
-          <Grid item xs={12} sm={6} md={4} key={word.id}>
-            <Card>
-              <CardContent>
-                <Typography variant="h6" component="div">
-                  {word.word}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Pronunciation: {word.pronunciation}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
+     <Container maxWidth="md">
+        <Grid container spacing={2}>
+          {words.map((word) => (
+             <Grid item xs={12} sm={6} md={4} key={word.id}>
+                <Card>
+                  <CardContent>
+                     <Typography variant="h6" component="div">
+                        {word.word}
+                     </Typography>
+                     <Typography variant="body2" color="text.secondary">
+                        Pronunciation: {word.pronunciation}
+                     </Typography>
+                  </CardContent>
+                </Card>
+             </Grid>
+          ))}
+        </Grid>
+     </Container>
   );
 }
 ```
 
-## Contribución
+## More info.
 
-Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
-
-1. Haz un fork del repositorio.
-2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y haz commit (`git commit -am 'Añade nueva funcionalidad'`).
-4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
-5. Abre un Pull Request.
-
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Para más detalles, consulta el archivo `LICENSE`.
-
----
-
-Este documento proporciona una visión general del proyecto, su estructura, y cómo contribuir. Para más detalles, consulta los archivos específicos en el repositorio.
+This document provides an overview of the project, its structure, and tech used. For more details, see the specific files in the repository.
 ```
+
+```
+This document was made with the help of DeepSeek.
+
