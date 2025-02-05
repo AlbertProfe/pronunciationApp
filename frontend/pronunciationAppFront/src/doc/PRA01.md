@@ -151,8 +151,6 @@
         </CardContent>
     ```    
 
-
-
 ## Solving issues
 1. **Reinstalling all the dependencies**
     ``` bash
@@ -160,3 +158,20 @@
     npm install
     npm run dev
     ```
+## Screenshots
+![Mock server - Words](src/doc/ScreenShots/MockServer-Words.png)
+![Mock server - Users](src/doc/ScreenShots/MockServer-Users.png)
+---
+![Axios data fetching](src/doc/ScreenShots/Axios-DataFetching.png)
+---
+![Layout+UserCard+User - Code](src/doc/ScreenShots/Layout-UserCard-User.png)
+![Avatar - Code](src/doc/ScreenShots/User-Avatar-JSX.png)
+![Avatar - web](src/doc/ScreenShots/User-Avatar-web.png)
+---
+![Level Color - Code](src/doc/ScreenShots/LevelColor.png)
+![Medium Cards](src/doc/ScreenShots/Cards-ChoosingMedium.png)
+![All the Cards](src/doc/ScreenShots/Cards-All.png)
+---
+![Synonyms - Render](src/doc/ScreenShots/Synonyms-Render.png)
+![Synonyms - Business Logic](src/doc/ScreenShots/Synonyms-BL.png)
+
