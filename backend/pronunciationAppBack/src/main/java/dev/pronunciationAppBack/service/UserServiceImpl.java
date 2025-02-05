@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 import java.util.UUID;
 
-public class UserServiceImpl implements UserServiceInterface {
+public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;

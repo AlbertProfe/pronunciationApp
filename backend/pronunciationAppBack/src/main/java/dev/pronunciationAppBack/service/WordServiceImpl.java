@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 import java.util.UUID;
 
-public class WordServiceImpl implements WordServiceInterface{
+public class WordServiceImpl implements WordService {
     @Autowired
-    private WordRepository wordRepository;
+    private static WordRepository wordRepository;
 
     @Override
     public List<Word> getAllWord() {
@@ -53,7 +53,6 @@ public class WordServiceImpl implements WordServiceInterface{
         return false;
     }
 
-    @Override
     public long countWords() {
         return wordRepository.count();
     }
