@@ -23,12 +23,12 @@ public class WordServiceImpl implements WordServiceInterface{
     }
 
     @Override
-    public Word getWordById(String id) {
+    public Word getWordById(UUID id) {
         return wordRepository.findById(id).orElse(null);
     }
 
     @Override
-    public Word updateWord(String id, Word wordDetails) {
+    public Word updateWord(UUID id, Word wordDetails) {
         Word word = wordRepository.findById(id).orElse(null);
         if (word != null) {
             word.setWordName(wordDetails.getWordName());
@@ -43,9 +43,10 @@ public class WordServiceImpl implements WordServiceInterface{
     }
 
     @Override
-    public boolean deleteWord(String id) {
+    public boolean deleteWord(UUID id) {
         if (wordRepository.existsById(id)){
             wordRepository.deleteById(id);
+            System.out.println("Deleted successfully!");
             return true;
         }
         System.out.println("ID doesn't exist!");

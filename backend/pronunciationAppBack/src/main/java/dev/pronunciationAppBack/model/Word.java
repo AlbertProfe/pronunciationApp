@@ -1,12 +1,15 @@
 package dev.pronunciationAppBack.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.UUID;
+
 @Data
-//@AllArgsConstructor
-//@NoArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 public class Word {
 
@@ -19,7 +22,11 @@ public class Word {
     private boolean isActive;
     private int level;
 
-    public Word() {}
+    @JsonIgnore
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id")
+    @JsonIgnoreProperties("wordsMapped")
+    private User userMapped;
 
     public Word(String id, String wordName, String definition, String phoneticSpelling, String sentence, boolean isActive, int level) {
         this.id = id;
@@ -29,10 +36,6 @@ public class Word {
         this.sentence = sentence;
         this.isActive = isActive;
         this.level = level;
-    }
-
-    public void setActive(boolean active) {
-        isActive = active;
     }
 
     @Override
