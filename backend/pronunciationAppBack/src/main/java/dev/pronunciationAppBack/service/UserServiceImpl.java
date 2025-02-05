@@ -32,8 +32,11 @@ public class UserServiceImpl implements UserService {
     public User updateUser(UUID id, User userDetails) {
         User user = userRepository.findById(id).orElse(null);
         if (user != null) {
-            user.setName(userDetails.getName());
+            user.setUserName(userDetails.getUserName());
             user.setEmail(userDetails.getEmail());
+            user.setPassword(userDetails.getPassword());
+            user.setActive(userDetails.isActive());
+            user.setCreatedAt(userDetails.getCreatedAt());
             return userRepository.save(user);
         }
         return null;
