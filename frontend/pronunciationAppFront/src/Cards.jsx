@@ -37,7 +37,7 @@ export default function WordList() {
           Word List
         </Typography>
         <Grid container spacing={2}>
-          {words.map((word) => (
+          {wordsPedro.map((word) => (
             <Grid item xs={12} sm={6} md={4} key={word.id}>
               <Card
                 sx={{
