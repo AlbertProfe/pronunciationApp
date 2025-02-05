@@ -30,7 +30,7 @@ export default function Users() {
 
     return (
         <Container maxWidth="sm">
-            <Box sx={{ my: 4, flexDirection: "column", alignItems: "center" }}>
+            <Box sx={{ my: 4, display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <Typography variant="h4" component="h1" gutterBottom>
                     Actual user
                 </Typography>
@@ -38,12 +38,13 @@ export default function Users() {
                     <Card sx={{ 
                         display: "flex", 
                         alignItems: "center", 
-                        p: 2, 
+                        p: 1, 
                         borderRadius: 3, 
                         boxShadow: 3, 
-                        backgroundColor: "#f5f5f0",
-                        color: "#333",
-                        }}>
+                        backgroundColor: "#faebd7",
+                        width: "auto",
+                        masWidth: 320,
+                       }}>
                         <Avatar src={avatarUrl} alt="User Avatar" sx={{ width: 64, height: 64, mr: 2 }} />
                         <CardContent>
                             <Typography variant="h6" sx={{ fontWeight: "bold" }}>

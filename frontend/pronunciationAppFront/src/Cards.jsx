@@ -11,6 +11,26 @@ import {
 } from "@mui/material";
 import { fetchWords } from "./data-api";
 
+const renderSynonyms = (synonyms) => {
+  if (!synonyms || synonyms.length === 0) return null;
+
+  return (
+    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.8 }}>
+      {synonyms.map((synonym, index) => (
+        <Chip
+          key={index}
+          label={synonym}
+          size="small"
+          sx={{
+            backgroundColor: "rgba(255, 255, 255, 0.1)",
+            color: "#F0F4F8",
+          }}
+        />
+      ))}
+    </Box>
+  );
+};
+
 export default function WordList() {
   const [words, setWords] = useState([]);
   const [difficultyFilter, setDifficultyFilter] = useState("all");
@@ -96,21 +116,7 @@ export default function WordList() {
                 <Typography variant="body2" sx={{ color: "#000000" }}>
                   Pronunciation: {word.pronunciation}
                 </Typography>
-                {word.synonyms?.length > 0 && (
-                    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.8 }}>
-                    {word.synonyms.map((synonym, index) => (
-                      <Chip
-                        key={index}
-                        label={synonym}
-                        size="small"
-                        sx={{
-                          backgroundColor: "rgba(255, 255, 255, 0.1)",
-                          color: "#F0F4F8",
-                        }}
-                      />
-                    ))}
-                    </Box>
-                    )}
+                {renderSynonyms(word.synonyms)} 
               </CardContent>
             </Card>
           </Grid>
