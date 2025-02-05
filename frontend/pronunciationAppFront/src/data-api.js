@@ -3,7 +3,7 @@ import axios from "axios";
 
 const BASE_URL = "https://f5917ef1-d560-4294-8890-88e2075deae8.mock.pstmn.io";
 
-// READ: Fetch all words
+// GET: Get all words
 export const fetchWords = async () => {
   try {
     const response = await axios.get(`${BASE_URL}/wordsPedro`);
@@ -14,7 +14,7 @@ export const fetchWords = async () => {
   }
 };
 
-// CREATE: Add a new word
+// POST: Add a new word
 export const createWord = async (newWord) => {
   try {
     const response = await axios.post(`${BASE_URL}/wordsPedro`, { word: newWord });
@@ -25,7 +25,7 @@ export const createWord = async (newWord) => {
   }
 };
 
-// UPDATE: Update an existing word by ID
+// PUT: Update an existing word by ID
 export const updateWord = async (id, updatedWord) => {
   try {
     const response = await axios.put(`${BASE_URL}/wordsPedro/${id}`, { word: updatedWord });
