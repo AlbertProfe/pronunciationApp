@@ -54,7 +54,7 @@ public class UserController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<User> updateUser(@PathVariable("id") UUID id, @RequestBody User user) {
+    public ResponseEntity<User> updateUser(@PathVariable("id") String id, @RequestBody User user) {
         User updatedUser = userService.updateUser(id, user);
         HttpHeaders headers = getCommonHeaders("Update a user");
         return updatedUser != null
@@ -63,7 +63,7 @@ public class UserController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteUser(@PathVariable("id") UUID id) {
+    public ResponseEntity<Void> deleteUser(@PathVariable("id") String id) {
         boolean deleted = userService.deleteUser(id);
         HttpHeaders headers = getCommonHeaders("Delete a user");
         return deleted
@@ -72,7 +72,7 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<User> getUserById(@PathVariable("id") UUID id) {
+    public ResponseEntity<User> getUserById(@PathVariable("id") String id) {
         User user = userService.getUserById(id);
         HttpHeaders headers = getCommonHeaders("Get a user");
         return user != null

@@ -2,9 +2,7 @@ package dev.pronunciationAppBack.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -15,6 +13,8 @@ import java.util.UUID;
 @Data
 @Entity
 @Table(name = "USER")
+@Getter
+@Setter
 public class User {
     @Id
     private String id;
@@ -29,14 +29,6 @@ public class User {
         fetch = FetchType.LAZY)
     private List<Word> wordsMapped;
 
-    public User(String id,String name, String email, String password, boolean active, LocalDate createdAt) {
-        this.id = id;
-        this.userName = name;
-        this.password = password;
-        this.email = email;
-        this.active = active;
-        this.createdAt = createdAt;
-    }
 
     @Override
     public String toString() {

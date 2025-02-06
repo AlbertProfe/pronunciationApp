@@ -11,6 +11,9 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name = "WORDS")
+@Getter
+@Setter
 public class Word {
 
     @Id
@@ -28,15 +31,6 @@ public class Word {
     @JsonIgnoreProperties("wordsMapped")
     private User userMapped;
 
-    public Word(String id, String wordName, String definition, String phoneticSpelling, String sentence, boolean isActive, int level) {
-        this.id = id;
-        this.wordName = wordName;
-        this.definition = definition;
-        this.phoneticSpelling = phoneticSpelling;
-        this.sentence = sentence;
-        this.isActive = isActive;
-        this.level = level;
-    }
 
     @Override
     public String toString() {

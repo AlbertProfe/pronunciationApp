@@ -10,8 +10,8 @@ public interface UserService {
 
     List<User> getAllUsers();
     User createUser(User user);
-    User getUserById(UUID id);
-    User updateUser(UUID id, User userDetails);
-    boolean deleteUser(UUID id);
+    User getUserById(String id);
+    User updateUser(String id, User userDetails);
+    boolean deleteUser(String id);
     long countUsers();
 }

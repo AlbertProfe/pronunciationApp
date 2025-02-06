@@ -3,10 +3,11 @@ package dev.pronunciationAppBack.service;
 import dev.pronunciationAppBack.model.User;
 import dev.pronunciationAppBack.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.UUID;
 
+@Service
 public class UserServiceImpl implements UserService {
 
     @Autowired
@@ -19,31 +20,42 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User createUser(User user) {
-        user.setId(UUID.randomUUID().toString());
+
         return userRepository.save(user);
     }
 
     @Override
-    public User getUserById(UUID id) {
+    public User getUserById(String id) {
         return userRepository.findById(id).orElse(null);
     }
 
     @Override
-    public User updateUser(UUID id, User userDetails) {
+    public User updateUser(String id, User userDetails) {
         User user = userRepository.findById(id).orElse(null);
         if (user != null) {
-            user.setUserName(userDetails.getUserName());
-            user.setEmail(userDetails.getEmail());
-            user.setPassword(userDetails.getPassword());
-            user.setActive(userDetails.isActive());
-            user.setCreatedAt(userDetails.getCreatedAt());
+            if (userDetails.getUserName() != null) {
+                user.setUserName(userDetails.getUserName());
+            }
+
+            if (userDetails.getEmail() != null) {
+                user.setEmail(userDetails.getEmail());
+            }
+            if (userDetails.getPassword() != null) {
+                user.setPassword(userDetails.getPassword());
+            }
+            if (userDetails.isActive()) {
+                user.setActive(userDetails.isActive());
+            }
+            if (userDetails.getCreatedAt() != null){
+                user.setCreatedAt(userDetails.getCreatedAt());
+        }
             return userRepository.save(user);
         }
         return null;
     }
 
     @Override
-    public boolean deleteUser(UUID id) {
+    public boolean deleteUser(String id) {
         if (userRepository.existsById(id)){
             userRepository.deleteById(id);
             System.out.println("Deleted successfully!");

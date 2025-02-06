@@ -5,12 +5,11 @@ import java.util.UUID;
 import dev.pronunciationAppBack.model.Word;
 
 public interface WordService {
-    List<Word> getAllWord();
+    List<Word> getAllWords();
     Word createWord(Word word);
-    Word getWordById(UUID id);
-    Word updateWord(UUID id, Word wordDetails);
-    boolean deleteWord(UUID id);
-
+    Word getWordById(String id);
+    Word updateWord(String id, Word wordDetails);
+    boolean deleteWord(String id);
     long countWords();
 
 }

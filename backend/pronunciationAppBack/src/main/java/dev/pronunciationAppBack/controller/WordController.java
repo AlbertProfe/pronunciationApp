@@ -60,7 +60,7 @@ public class WordController {
     }
 
    @PutMapping("/{id}")
-    public ResponseEntity<Word> updateWord(@PathVariable("id") UUID id, @RequestBody Word word) {
+    public ResponseEntity<Word> updateWord(@PathVariable("id") String id, @RequestBody Word word) {
         Word updatedWord = wordService.updateWord(id, word);
         HttpHeaders headers = getCommonHeaders("Update a word");
         return updatedWord != null
@@ -69,7 +69,7 @@ public class WordController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Word> deleteWord(@PathVariable("id") UUID id) {
+    public ResponseEntity<Word> deleteWord(@PathVariable("id") String id) {
         boolean deleted = wordService.deleteWord(id);
         HttpHeaders headers = getCommonHeaders("Delete a word");
         return deleted
@@ -78,7 +78,7 @@ public class WordController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Word> getWordById(@PathVariable("id") UUID id) {
+    public ResponseEntity<Word> getWordById(@PathVariable("id") String id) {
         Word word = wordService.getWordById(id);
         HttpHeaders headers = getCommonHeaders("Get a word");
         return word != null
