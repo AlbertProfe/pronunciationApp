@@ -5,6 +5,7 @@ import dev.pronunciationAppBack.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Service
@@ -12,6 +13,19 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;
+
+    public List<User> getActiveUsers() {
+        return userRepository.findByActiveTrue();
+    }
+
+    public List<User> getUsersCreatedRecently(int days) {
+        LocalDate cutoffDate = LocalDate.now().minusDays(days);
+        return userRepository.findByCreatedAtAfter(cutoffDate);
+    }
+
+    public long countActiveUsers() {
+        return userRepository.countByActiveTrue();
+    }
 
     @Override
     public List<User> getAllUsers() {
