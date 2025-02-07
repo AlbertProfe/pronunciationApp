@@ -5,7 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-public class User {
+public class UserEntity {
 
     @Id
     private String id;
@@ -15,9 +15,9 @@ public class User {
     private int totalScore;
     private boolean isActive;
 
-    public User() {}
+    public UserEntity() {}
 
-    public User(String id, String username, int age, String email, int totalScore, boolean isActive) {
+    public UserEntity(String id, String username, int age, String email, int totalScore, boolean isActive) {
         this.id = id;
         this.username = username;
         this.age = age;
@@ -76,7 +76,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "UserEntity{" +
                 "id='" + id + '\'' +
                 ", userName='" + username + '\'' +
                 ", age='" + age + '\'' +

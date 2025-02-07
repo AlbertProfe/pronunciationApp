@@ -1,10 +1,8 @@
 package dev.pronunciationAppBack.controller;
 
 
-import dev.pronunciationAppBack.model.User;
+import dev.pronunciationAppBack.model.UserEntity;
 import dev.pronunciationAppBack.service.UserService;
-import org.apache.coyote.Request;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -22,36 +20,36 @@ public class UserController {
     private UserService userService;
     
     @GetMapping
-    public ResponseEntity<List<User>> getAllUsers() {
-        List<User> users = userService.getAllUsers();
+    public ResponseEntity<List<UserEntity>> getAllUsers() {
+        List<UserEntity> users = userService.getAllUsers();
         HttpHeaders headers = getCommonHeaders("Get all users");
 
-        return !user.isEmpty()
+        return !users.isEmpty()
                 ? new ResponseEntity<>(users, headers, HttpStatus.OK)
                 : new ResponseEntity<>(headers, HttpStatus.NOT_FOUND);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<User> getUserById(@PathVariable String id) {
-        Optional<User> user = userService.getUserById(id);
+    public ResponseEntity<UserEntity> getUserById(@PathVariable String id) {
+        Optional<UserEntity> userEntity = userService.getUserById(id);
         HttpHeaders headers = getCommonHeaders("Get user by ID");
         
-        return user.map(value -> new ResponseEntity<>(value, headers, HttpStatus.OK))
+        return userEntity.map(value -> new ResponseEntity<>(value, headers, HttpStatus.OK))
                 .orElseGet(() -> new ResponseEntity<>(headers, HttpStatus.NOT_FOUND));
-        
+
     }
     
     @PostMapping("/createUser")
-    public ResponseEntity<User> createUser(@RequestBody User user) {
-        User createUser = userService.createUser(user);
+    public ResponseEntity<UserEntity> createUser(@RequestBody UserEntity userEntity) {
+        UserEntity createUserEntity = userService.createUser(userEntity);
         HttpHeaders headers = getCommonHeaders("Create a new user");
         
-        return new ResponseEntity<>(createUser, headers, HttpStatus.CREATED);
+        return new ResponseEntity<>(createUserEntity, headers, HttpStatus.CREATED);
     }
     
     @PutMapping("/{id}")
-    public ResponseEntity<User> updateUser(@PathVariable String id, @RequestBody User user) {
-        User updateUser = user.Service.updateUser(user);
+    public ResponseEntity<UserEntity> updateUser(@PathVariable String id, @RequestBody UserEntity user) {
+        UserEntity updateUser = userService.updateUser(user);
         HttpHeaders headers = getCommonHeaders("Update a user");
         
         return new ResponseEntity<>(updateUser, headers, HttpStatus.OK);
@@ -63,9 +61,9 @@ public class UserController {
         
         if (userService.existsById(idToDelete)) {
             userService.deleteUser(idToDelete);
-            return new ResponseEntity<>("User deleted", headers, HttpStatus.OK);
+            return new ResponseEntity<>("UserEntity deleted", headers, HttpStatus.OK);
         } else {
-            return new ResponseEntity<>("User not found", headers, HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>("UserEntity not found", headers, HttpStatus.NOT_FOUND);
         }
     }
     
@@ -74,5 +72,10 @@ public class UserController {
         userService.deleteAllUsers();
         HttpHeaders headers = getCommonHeaders("Delete all users");
         return new ResponseEntity<>("All users deleted", headers, HttpStatus.OK);
+    }
+
+    private HttpHeaders getCommonHeaders(String string) {
+        HttpHeaders headers =  new HttpHeaders();
+        return headers;
     }
 }

@@ -1,6 +1,6 @@
 package dev.pronunciationAppBack.service;
 
-import dev.pronunciationAppBack.model.User;
+import dev.pronunciationAppBack.model.UserEntity;
 import dev.pronunciationAppBack.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,19 +13,19 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public List<User> getAllUsers(){
+    public List<UserEntity> getAllUsers(){
         return userRepository.findAll();
     }
 
-    public Optional<User> getUserById(String id) {
+    public Optional<UserEntity> getUserById(String id) {
         return Optional.ofNullable(userRepository.getUserById(id));
     }
 
-    public User createUser(User user) {
+    public UserEntity createUser(UserEntity user) {
         return userRepository.save(user);
     }
 
-    public User updateUser(User user) {
+    public UserEntity updateUser(UserEntity user) {
         return userRepository.save(user);
     }
 
