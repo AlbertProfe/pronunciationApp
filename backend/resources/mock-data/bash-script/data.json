@@ -1,0 +1,318 @@
+[
+  {
+    "id": "8f7d1b9e3a2c5f6e",
+    "wordName": "aberration",
+    "definition": "a departure from what is normal, usual, or expected",
+    "phoneticSpelling": "ˌæbəˈreɪʃən",
+    "sentence": "The sudden drop in temperature was an aberration for this time of year.",
+    "level": 3,
+    "active": true
+  },
+  {
+    "id": "2c4a6b8d0e1f3g5h",
+    "wordName": "benevolent",
+    "definition": "kind, generous, and caring about others",
+    "phoneticSpelling": "bəˈnevələnt",
+    "sentence": "The benevolent donor provided funds for the new hospital wing.",
+    "level": 2,
+    "active": true
+  },
+  {
+    "id": "7j9k1l3m5n2o4p6q",
+    "wordName": "cacophony",
+    "definition": "a harsh, discordant mixture of sounds",
+    "phoneticSpelling": "kəˈkɒfəni",
+    "sentence": "The cacophony of car horns filled the busy street.",
+    "level": 4,
+    "active": true
+  },
+  {
+    "id": "1r3s5t7u9v2w4x6y",
+    "wordName": "diligent",
+    "definition": "having or showing care and conscientiousness in one's work or duties",
+    "phoneticSpelling": "ˈdɪlɪdʒənt",
+    "sentence": "The diligent student always completed her homework on time.",
+    "level": 2,
+    "active": true
+  },
+  {
+    "id": "8z0a2b4c6d1e3f5g",
+    "wordName": "ephemeral",
+    "definition": "lasting for a very short time",
+    "phoneticSpelling": "ɪˈfemərəl",
+    "sentence": "The beauty of cherry blossoms is ephemeral, lasting only a few days.",
+    "level": 3,
+    "active": true
+  },
+  {
+    "id": "7h9i1j3k5l2m4n6o",
+    "wordName": "facetious",
+    "definition": "treating serious issues with deliberately inappropriate humor",
+    "phoneticSpelling": "fəˈsiːʃəs",
+    "sentence": "His facetious remarks about the company's financial troubles were not well-received.",
+    "level": 4,
+    "active": true
+  },
+  {
+    "id": "5p7q9r1s3t5u2v4w",
+    "wordName": "gregarious",
+    "definition": "fond of company; sociable",
+    "phoneticSpelling": "ɡrɪˈɡeəriəs",
+    "sentence": "The gregarious host made sure all the guests felt welcome at the party.",
+    "level": 3,
+    "active": true
+  },
+  {
+    "id": "6x8y0z2a4b1c3d5e",
+    "wordName": "harbinger",
+    "definition": "a person or thing that announces or signals the approach of another",
+    "phoneticSpelling": "ˈhɑːbɪndʒə",
+    "sentence": "The robin is often seen as a harbinger of spring.",
+    "level": 4,
+    "active": true
+  },
+  {
+    "id": "9f1g3h5i7j2k4l6m",
+    "wordName": "incessant",
+    "definition": "continuing without pause or interruption",
+    "phoneticSpelling": "ɪnˈsesənt",
+    "sentence": "The incessant barking of the neighbor's dog kept us awake all night.",
+    "level": 3,
+    "active": true
+  },
+  {
+    "id": "2n4o6p8q0r1s3t5u",
+    "wordName": "juxtapose",
+    "definition": "to place or deal with close together for contrasting effect",
+    "phoneticSpelling": "ˈdʒʌkstəpəʊz",
+    "sentence": "The artist decided to juxtapose images of war and peace in her latest work.",
+    "level": 4,
+    "active": true
+  },
+  {
+    "id": "7v9w1x3y5z2a4b6c",
+    "wordName": "kinetic",
+    "definition": "relating to or resulting from motion",
+    "phoneticSpelling": "kɪˈnetɪk",
+    "sentence": "The sculpture's kinetic elements moved gently in the breeze.",
+    "level": 3,
+    "active": true
+  },
+  {
+    "id": "8d0e2f4g6h1i3j5k",
+    "wordName": "lethargic",
+    "definition": "sluggish and apathetic",
+    "phoneticSpelling": "lɪˈθɑːdʒɪk",
+    "sentence": "The hot weather made everyone feel lethargic and unmotivated.",
+    "level": 2,
+    "active": true
+  },
+  {
+    "id": "1l3m5n7o9p2q4r6s",
+    "wordName": "mellifluous",
+    "definition": "sweet or musical; pleasant to hear",
+    "phoneticSpelling": "məˈlɪfluəs",
+    "sentence": "The singer's mellifluous voice captivated the audience.",
+    "level": 4,
+    "active": true
+  },
+  {
+    "id": "5t7u9v1w3x5y2z4a",
+    "wordName": "nefarious",
+    "definition": "wicked or criminal",
+    "phoneticSpelling": "nɪˈfeəriəs",
+    "sentence": "The detective uncovered the CEO's nefarious scheme to embezzle company funds.",
+    "level": 3,
+    "active": true
+  },
+  {
+    "id": "6b8c0d2e4f1g3h5i",
+    "wordName": "obfuscate",
+    "definition": "to render obscure, unclear, or unintelligible",
+    "phoneticSpelling": "ˈɒbfʌskeɪt",
+    "sentence": "The politician tried to obfuscate the issue by using complex jargon.",
+    "level": 4,
+    "active": true
+  },
+  {
+    "id": "9j1k3l5m7n2o4p6q",
+    "wordName": "panacea",
+    "definition": "a solution or remedy for all difficulties or diseases",
+    "phoneticSpelling": "ˌpænəˈsiːə",
+    "sentence": "Exercise is not a panacea for all health problems, but it certainly helps.",
+    "level": 3,
+    "active": true
+  },
+  {
+    "id": "2r4s6t8u0v1w3x5y",
+    "wordName": "quintessential",
+    "definition": "representing the most perfect or typical example of a quality or class",
+    "phoneticSpelling": "ˌkwɪntɪˈsenʃəl",
+    "sentence": "The small town diner was the quintessential American eating establishment.",
+    "level": 4,
+    "active": true
+  },
+  {
+    "id": "7z9a1b3c5d2e4f6g",
+    "wordName": "resilient",
+    "definition": "able to withstand or recover quickly from difficult conditions",
+    "phoneticSpelling": "rɪˈzɪliənt",
+    "sentence": "The resilient community quickly rebuilt after the natural disaster.",
+    "level": 3,
+    "active": true
+  },
+  {
+    "id": "8h0i2j4k6l1m3n5o",
+    "wordName": "surreptitious",
+    "definition": "kept secret, especially because it would not be approved of",
+    "phoneticSpelling": "ˌsʌrəpˈtɪʃəs",
+    "sentence": "He made a surreptitious attempt to leave the party without saying goodbye.",
+    "level": 4,
+    "active": true
+  },
+  {
+    "id": "1p3q5r7s9t2u4v6w",
+    "wordName": "tenacious",
+    "definition": "tending to keep a firm hold of something; clinging or adhering closely",
+    "phoneticSpelling": "təˈneɪʃəs",
+    "sentence": "The tenacious climber refused to give up, even when faced with steep cliffs.",
+    "level": 3,
+    "active": true
+  },
+  {
+    "id": "5x7y9z1a3b5c2d4e",
+    "wordName": "ubiquitous",
+    "definition": "present, appearing, or found everywhere",
+    "phoneticSpelling": "juːˈbɪkwɪtəs",
+    "sentence": "Smartphones have become ubiquitous in modern society.",
+    "level": 4,
+    "active": true
+  },
+  {
+    "id": "6f8g0h2i4j1k3l5m",
+    "wordName": "vociferous",
+    "definition": "expressing or characterized by vehement opinions; loud and forceful",
+    "phoneticSpelling": "və(ʊ)ˈsɪfərəs",
+    "sentence": "The vociferous crowd demanded justice for the wrongly accused man.",
+    "level": 4,
+    "active": true
+  },
+  {
+    "id": "9n1o3p5q7r2s4t6u",
+    "wordName": "whimsical",
+    "definition": "playfully quaint or fanciful, especially in an appealing and amusing way",
+    "phoneticSpelling": "ˈwɪmzɪkəl",
+    "sentence": "The artist's whimsical sculptures brought a smile to everyone's face.",
+    "level": 3,
+    "active": true
+  },
+  {
+    "id": "2v4w6x8y0z1a3b5c",
+    "wordName": "xenophobia",
+    "definition": "dislike of or prejudice against people from other countries",
+    "phoneticSpelling": "ˌzenəˈfəʊbiə",
+    "sentence": "The politician's xenophobia was evident in his discriminatory policies.",
+    "level": 4,
+    "active": true
+  },
+  {
+    "id": "7d9e1f3g5h2i4j6k",
+    "wordName": "yearn",
+    "definition": "to have an intense feeling of longing for something",
+    "phoneticSpelling": "jɜːn",
+    "sentence": "After months away, she yearned to return to her hometown.",
+    "level": 2,
+    "active": true
+  },
+  {
+    "id": "8l0m2n4o6p1q3r5s",
+    "wordName": "zealous",
+    "definition": "having or showing zeal; enthusiastic and diligent",
+    "phoneticSpelling": "ˈzeləs",
+    "sentence": "The zealous volunteer dedicated all her free time to the charity.",
+    "level": 3,
+    "active": true
+  },
+  {
+    "id": "1t3u5v7w9x2y4z6a",
+    "wordName": "ambivalent",
+    "definition": "having mixed feelings or contradictory ideas about something or someone",
+    "phoneticSpelling": "æmˈbɪvələnt",
+    "sentence": "She felt ambivalent about moving to a new city for her job.",
+    "level": 3,
+    "active": true
+  },
+  {
+    "id": "5b7c9d1e3f5g2h4i",
+    "wordName": "brevity",
+    "definition": "concise and exact use of words in writing or speech",
+    "phoneticSpelling": "ˈbrevɪti",
+    "sentence": "The speaker's brevity was appreciated by the audience.",
+    "level": 3,
+    "active": true
+  },
+  {
+    "id": "6j8k0l2m4n1o3p5q",
+    "wordName": "cognizant",
+    "definition": "having knowledge or awareness",
+    "phoneticSpelling": "ˈkɒɡnɪzənt",
+    "sentence": "The manager was cognizant of the team's concerns about the new project.",
+    "level": 4,
+    "active": true
+  },
+  {
+    "id": "9r1s3t5u7v2w4x6y",
+    "wordName": "dexterous",
+    "definition": "showing or having skill, especially with the hands",
+    "phoneticSpelling": "ˈdekstərəs",
+    "sentence": "The dexterous magician amazed the crowd with his sleight of hand.",
+    "level": 3,
+    "active": true
+  },
+  {
+    "id": "2z4a6b8c0d1e3f5g",
+    "wordName": "eloquent",
+    "definition": "fluent or persuasive in speaking or writing",
+    "phoneticSpelling": "ˈeləkwənt",
+    "sentence": "Her eloquent speech moved the entire audience to tears.",
+    "level": 3,
+    "active": true
+  },
+  {
+    "id": "7h9i1j3k5l2m4n6o",
+    "wordName": "fortuitous",
+    "definition": "happening by chance rather than intention",
+    "phoneticSpelling": "fɔːˈtjuːɪtəs",
+    "sentence": "Their meeting at the airport was entirely fortuitous.",
+    "level": 4,
+    "active": true
+  },
+  {
+    "id": "8p0q2r4s6t1u3v5w",
+    "wordName": "garrulous",
+    "definition": "excessively talkative, especially on trivial matters",
+    "phoneticSpelling": "ˈɡærʊləs",
+    "sentence": "The garrulous passenger talked throughout the entire flight.",
+    "level": 4,
+    "active": true
+  },
+  {
+    "id": "1x3y5z7a9b2c4d6e",
+    "wordName": "haphazard",
+    "definition": "lacking any obvious principle of organization",
+    "phoneticSpelling": "hæpˈhæzəd",
+    "sentence": "The room was in a haphazard state, with clothes and books strewn everywhere.",
+    "level": 3,
+    "active": true
+  },
+  {
+    "id": "5f7g9h1i3j5k2l4m",
+    "wordName": "iconoclast",
+    "definition": "a person who attacks or criticizes cherished beliefs or institutions",
+    "phoneticSpelling": "aɪˈkɒnəklæst",
+    "sentence": "The young artist was seen as an iconoclast in the conservative art world.",
+    "level": 4,
+    "active": true
+  }
+]
+

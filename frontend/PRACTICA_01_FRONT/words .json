@@ -1,0 +1,75 @@
+
+{
+    "words": [
+        {
+            "id": "1",
+            "word": "benevolent",
+            "pronunciation": "/bɪˈnɛvələnt/",
+            "difficulty": "medium"
+         
+        },
+        {
+            "id": "2",
+            "word": "serendipity",
+            "pronunciation": "/ˌserənˈdɪpɪti/",
+            "difficulty": "high"
+          
+        },
+        {
+            "id": "3",
+            "word": "ephemeral",
+            "pronunciation": "/ɪˈfɛmərəl/",
+            "difficulty": "medium"
+          
+        },
+        {
+            "id": "4",
+            "word": "ubiquitous",
+            "pronunciation": "/juːˈbɪkwɪtəs/",
+            "difficulty": "high"
+           
+        },
+        {
+            "id": "5",
+            "word": "mellifluous",
+            "pronunciation": "/məˈlɪfluəs/",
+            "difficulty": "high"
+          
+        },
+        {
+            "id": "6",
+            "word": "eloquent",
+            "pronunciation": "/ˈɛləkwənt/",
+            "difficulty": "medium"
+          
+        },
+        {
+            "id": "7",
+            "word": "quintessential",
+            "pronunciation": "/ˌkwɪntɪˈsenʃəl/",
+            "difficulty": "high"
+           
+        },
+        {
+            "id": "8",
+            "word": "ethereal",
+            "pronunciation": "/ɪˈθɪəriəl/",
+            "difficulty": "high"
+           
+        },
+        {
+            "id": "9",
+            "word": "surreptitious",
+            "pronunciation": "/ˌsʌrəpˈtɪʃəs/",
+            "difficulty": "high"
+          
+        },
+        {
+            "id": "10",
+            "word": "labyrinthine",
+            "pronunciation": "/ˌlæbəˈrɪnθaɪn/",
+            "difficulty": "high"
+        
+        }
+    ]
+}
