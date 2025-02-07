@@ -2,7 +2,6 @@ package dev.pronunciationAppBack.controller;
 
 
 import dev.pronunciationAppBack.model.Word;
-import dev.pronunciationAppBack.repository.WordRepository;
 import dev.pronunciationAppBack.service.WordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -11,11 +10,9 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-
-
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
+
 
 @RequestMapping("/api/v1/words")
 @RestController

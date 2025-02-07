@@ -32,7 +32,7 @@ public interface UserRepository extends JpaRepository<User, String> {
             @Param("date") LocalDate date
     );
 
-    Optional<Object> findByEmail(String email);
+    Optional<User> findByEmail(String email);
 
-    Optional<Object> findByUserName(String userName);
+    Optional<User> findByUserName(String userName);
 }

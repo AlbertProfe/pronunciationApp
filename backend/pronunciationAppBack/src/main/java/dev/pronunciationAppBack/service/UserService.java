@@ -22,6 +22,6 @@ public interface UserService {
     List<User> getUserNameContains(String username);
     List<User> getUserEmailContains(String email);
     List<User> getActiveUsersCreatedAfter(LocalDate date);
-    Optional<User> findByEmail(String email);
-    Optional<User> findByUserName(String userName);
+    Optional<User> getUserByEmail(String email);
+    Optional<User> getUserByUserName(String userName);
 }

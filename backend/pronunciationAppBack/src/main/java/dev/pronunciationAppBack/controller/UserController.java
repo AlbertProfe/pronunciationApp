@@ -84,33 +84,34 @@ public class UserController {
     public ResponseEntity<List<User>> getActiveUsers() {
         List<User> activeUsers = userService.getActiveUsers();
         HttpHeaders headers = getCommonHeaders("Get all active users");
-        return activeUsers != null
-                ? new ResponseEntity<>(activeUsers, headers, HttpStatus.OK)
-                : new ResponseEntity<>(headers, HttpStatus.NOT_FOUND);
+        return activeUsers.isEmpty() ? ResponseEntity.noContent().headers(headers).build()
+                                    : ResponseEntity.ok().headers(headers).body(activeUsers);
     }
 
     @GetMapping("/created-after")
     public ResponseEntity<List<User>> getUsersCreatedAtAfter(@RequestParam LocalDate date) {
         List<User> users = userService.getUsersCreatedAtAfter(date);
         HttpHeaders headers = getCommonHeaders("Get users created after a specific date");
-        return users != null
-                ? new ResponseEntity<>(users, headers, HttpStatus.OK)
-                : new ResponseEntity<>(headers, HttpStatus.NOT_FOUND);
+        return users.isEmpty() ? ResponseEntity.noContent().headers(headers).build()
+                                : ResponseEntity.ok().headers(headers).body(users);
     }
 
     @GetMapping("/username/contains")
     public ResponseEntity<List<User>> getUserNameContains(@RequestParam String username) {
         List<User> users = userService.getUserNameContains(username);
-        return ResponseEntity.ok(users);
+        HttpHeaders headers = getCommonHeaders("Get users by username containing");
+        return users.isEmpty() ? ResponseEntity.noContent().headers(headers).build()
+                                : ResponseEntity.ok().headers(headers).body(users);
+
     }
 
     @GetMapping("/email/contains")
     public ResponseEntity<List<User>> getUserEmailContains(@RequestParam String email) {
         List<User> users = userService.getUserEmailContains(email);
         HttpHeaders headers = getCommonHeaders("Get users with email domain");
-        return users != null
-                ? new ResponseEntity<>(users, headers, HttpStatus.OK)
-                : new ResponseEntity<>(headers, HttpStatus.NOT_FOUND);
+        return users.isEmpty() ? ResponseEntity.noContent().headers(headers).build()
+                                : ResponseEntity.ok().headers(headers).body(users);
+
     }
 
     //
@@ -118,29 +119,32 @@ public class UserController {
     public ResponseEntity<List<User>> getActiveUsersCreatedAfter(@RequestParam LocalDate date) {
         List<User> users = userService.getActiveUsersCreatedAfter(date);
         HttpHeaders headers = getCommonHeaders("Get active users created after a specific date");
-        return users != null
-                ? new ResponseEntity<>(users, headers, HttpStatus.OK)
-                : new ResponseEntity<>(headers, HttpStatus.NOT_FOUND);
+        return users.isEmpty() ? ResponseEntity.noContent().headers(headers).build()
+                                : ResponseEntity.ok().headers(headers).body(users);
+
     }
-    // TERMINAR!!
 
     @GetMapping("/email/{email}")
-    public ResponseEntity<User> findByEmail(@PathVariable String email) {
-        return userService.findByEmail(email)
-                .map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.notFound().build());
+    public ResponseEntity<User> getUserByEmail(@PathVariable String email) {
+        User user = userService.getUserByEmail(email).orElse(null);
+        HttpHeaders headers = getCommonHeaders("Get a user by email");
+        return user != null
+                ? new ResponseEntity<>(user, headers, HttpStatus.OK)
+                : new ResponseEntity<>(headers, HttpStatus.NOT_FOUND);
     }
 
 
     @GetMapping("/username/{userName}")
-    public ResponseEntity<User> findByUserName(@PathVariable String userName) {
-        return userService.findByUserName(userName)
-                .map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.notFound().build());
+    public ResponseEntity<User> getUserByUserName(@PathVariable String userName) {
+        User user = userService.getUserByUserName(userName).orElse(null);
+        HttpHeaders headers = getCommonHeaders("Get a user by username");
+        return user != null
+                ? new ResponseEntity<>(user, headers, HttpStatus.OK)
+                : new ResponseEntity<>(headers, HttpStatus.NOT_FOUND);
     }
 
     @GetMapping("/count")
-    public ResponseEntity<Integer> countUsers() {
+    public ResponseEntity<Long> countUsers() {
         return ResponseEntity.ok(userService.countUsers());
     }
 
@@ -153,7 +157,6 @@ public class UserController {
         headers.add("version", "1.0.0");
         headers.add("user-count", String.valueOf(userService.countUsers()));
         headers.add("object", "users");
-
         return headers;
     }
 }

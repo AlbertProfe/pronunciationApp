@@ -41,14 +41,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Optional<User> findByEmail(String email) {
-
-
+    public Optional<User> getUserByEmail(String email) {
         return userRepository.findByEmail(email);
     }
 
     @Override
-    public Optional<User> findByUserName(String userName) {
+    public Optional<User> getUserByUserName(String userName) {
         return userRepository.findByUserName(userName);
     }
 
