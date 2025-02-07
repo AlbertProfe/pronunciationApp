@@ -7,7 +7,7 @@ import lombok.*;
 
 import java.util.UUID;
 
-@Data
+//@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -29,6 +29,53 @@ public class Word {
     @JsonIgnoreProperties("wordsMapped")
     private User userMapped;
 
+    public String getWordName() {
+        return wordName;
+    }
+
+    public void setWordName(String wordName) {
+        this.wordName = wordName;
+    }
+
+    public String getDefinition() {
+        return definition;
+    }
+
+    public void setDefinition(String definition) {
+        this.definition = definition;
+    }
+
+    public String getPhoneticSpelling() {
+        return phoneticSpelling;
+    }
+
+    public void setPhoneticSpelling(String phoneticSpelling) {
+        this.phoneticSpelling = phoneticSpelling;
+    }
+
+    public String getSentence() {
+        return sentence;
+    }
+
+    public void setSentence(String sentence) {
+        this.sentence = sentence;
+    }
+
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
 
     @Override
     public String toString() {
