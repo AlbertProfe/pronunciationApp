@@ -2,6 +2,7 @@ package dev.pronunciationAppBack.controller;
 
 
 import dev.pronunciationAppBack.model.User;
+import dev.pronunciationAppBack.service.UserService;
 import org.apache.coyote.Request;
 import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,18 +19,18 @@ import java.util.Optional;
 public class UserController {
     
     @Autowired
-    private  UserService userService;
+    private UserService userService;
     
     @GetMapping
     public ResponseEntity<List<User>> getAllUsers() {
         List<User> user = userService.getAllUsers();
         HttpHeaders headers = getCommonHeaders("Get all users");
-        
+
         return !user.isEmpty()
                 ? new ResponseEntity<>(users, headers, HttpStatus.OK)
                 : new ResponseEntity<>(headers, HttpStatus.NOT_FOUND);
     }
-    
+
     @GetMapping("/{id}")
     public ResponseEntity<User> getUserById(@PathVariable String id) {
         Optional<User> user = userService.getUserById(id);
