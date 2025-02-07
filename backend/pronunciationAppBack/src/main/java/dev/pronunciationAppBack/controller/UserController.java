@@ -48,8 +48,8 @@ public class UserController {
     }
     
     @PutMapping("/{id}")
-    public ResponseEntity<UserEntity> updateUser(@PathVariable String id, @RequestBody UserEntity user) {
-        UserEntity updateUser = userService.updateUser(user);
+    public ResponseEntity<UserEntity> updateUser(@PathVariable String id, @RequestBody UserEntity userEntity) {
+        UserEntity updateUser = userService.updateUser(userEntity);
         HttpHeaders headers = getCommonHeaders("Update a user");
         
         return new ResponseEntity<>(updateUser, headers, HttpStatus.OK);
@@ -61,9 +61,9 @@ public class UserController {
         
         if (userService.existsById(idToDelete)) {
             userService.deleteUser(idToDelete);
-            return new ResponseEntity<>("UserEntity deleted", headers, HttpStatus.OK);
+            return new ResponseEntity<>("User deleted", headers, HttpStatus.OK);
         } else {
-            return new ResponseEntity<>("UserEntity not found", headers, HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>("User not found", headers, HttpStatus.NOT_FOUND);
         }
     }
     
