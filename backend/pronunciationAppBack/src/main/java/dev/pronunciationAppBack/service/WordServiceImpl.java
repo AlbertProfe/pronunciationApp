@@ -20,7 +20,7 @@ public class WordServiceImpl implements WordService {
 
     @Override
     public Word createWord(Word word) {
-
+        word.setId(UUID.randomUUID().toString());
         return wordRepository.save(word);
     }
 

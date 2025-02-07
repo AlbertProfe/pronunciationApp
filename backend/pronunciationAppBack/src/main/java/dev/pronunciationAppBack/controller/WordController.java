@@ -25,9 +25,6 @@ public class WordController {
     private String endpointUrlWords;
 
     @Autowired
-    public WordRepository wordRepository;
-
-    @Autowired
     public WordService wordService;
 
     @GetMapping("/show-endpoint")
@@ -38,7 +35,7 @@ public class WordController {
     @GetMapping("/allWords")
     public ResponseEntity<List<Word>> getAllWords() {
 
-        List<Word> words = wordRepository.findAll();
+        List<Word> words = wordService.getAllWords();
         HttpHeaders headers = getCommonHeaders("Get all customers");
         System.out.println("Number of words: " + words.size());
         for (Word word : words) {

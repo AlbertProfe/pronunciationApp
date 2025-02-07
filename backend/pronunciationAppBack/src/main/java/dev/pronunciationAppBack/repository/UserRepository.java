@@ -7,6 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
 
 public interface UserRepository extends JpaRepository<User, String> {
@@ -17,7 +18,7 @@ public interface UserRepository extends JpaRepository<User, String> {
     List<User> findByCreatedAtAfter(LocalDate date);
 
     // Find users by username containing
-    List<User> findByUsernameContaining(String username);
+    List<User> findByUserNameContaining(String username);
 
     // Count active users
     long countByActiveTrue();
@@ -30,4 +31,8 @@ public interface UserRepository extends JpaRepository<User, String> {
     List<User> findActiveUsersCreatedAfter(
             @Param("date") LocalDate date
     );
+
+    Optional<Object> findByEmail(String email);
+
+    Optional<Object> findByUserName(String userName);
 }

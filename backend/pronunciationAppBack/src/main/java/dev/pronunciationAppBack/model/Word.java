@@ -25,9 +25,17 @@ public class Word {
 
     @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "WORD_USER_FK_ID")
     @JsonIgnoreProperties("wordsMapped")
     private User userMapped;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getWordName() {
         return wordName;

@@ -10,9 +10,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.HttpHeaders;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
+
 
 @RequestMapping("/api/v1/users")
 @RestController
@@ -20,9 +21,6 @@ public class UserController {
 
     @Value("${endpoint.url.users}")
     private String endpointUrlUsers;
-
-    @Autowired
-    private UserRepository userRepository;
 
     @Autowired
     private UserService userService;
@@ -34,7 +32,7 @@ public class UserController {
 
     @GetMapping("/allUsers")
     public ResponseEntity<List<User>> getAllUsers() {
-        List<User> users = userRepository.findAll();
+        List<User> users = userService.getAllUsers();
         HttpHeaders headers = getCommonHeaders("Get all users");
         System.out.println("Number of users: " + users.size());
         if (users.isEmpty()) {
@@ -78,6 +76,72 @@ public class UserController {
         return user != null
                 ? new ResponseEntity<>(user, headers, HttpStatus.OK)
                 : new ResponseEntity<>(headers, HttpStatus.NOT_FOUND);
+    }
+
+    // New endpoints for PRA02
+
+    @GetMapping("/active-users")
+    public ResponseEntity<List<User>> getActiveUsers() {
+        List<User> activeUsers = userService.getActiveUsers();
+        HttpHeaders headers = getCommonHeaders("Get all active users");
+        return activeUsers != null
+                ? new ResponseEntity<>(activeUsers, headers, HttpStatus.OK)
+                : new ResponseEntity<>(headers, HttpStatus.NOT_FOUND);
+    }
+
+    @GetMapping("/created-after")
+    public ResponseEntity<List<User>> getUsersCreatedAtAfter(@RequestParam LocalDate date) {
+        List<User> users = userService.getUsersCreatedAtAfter(date);
+        HttpHeaders headers = getCommonHeaders("Get users created after a specific date");
+        return users != null
+                ? new ResponseEntity<>(users, headers, HttpStatus.OK)
+                : new ResponseEntity<>(headers, HttpStatus.NOT_FOUND);
+    }
+
+    @GetMapping("/username/contains")
+    public ResponseEntity<List<User>> getUserNameContains(@RequestParam String username) {
+        List<User> users = userService.getUserNameContains(username);
+        return ResponseEntity.ok(users);
+    }
+
+    @GetMapping("/email/contains")
+    public ResponseEntity<List<User>> getUserEmailContains(@RequestParam String email) {
+        List<User> users = userService.getUserEmailContains(email);
+        HttpHeaders headers = getCommonHeaders("Get users with email domain");
+        return users != null
+                ? new ResponseEntity<>(users, headers, HttpStatus.OK)
+                : new ResponseEntity<>(headers, HttpStatus.NOT_FOUND);
+    }
+
+    //
+    @GetMapping("/active/created-after")
+    public ResponseEntity<List<User>> getActiveUsersCreatedAfter(@RequestParam LocalDate date) {
+        List<User> users = userService.getActiveUsersCreatedAfter(date);
+        HttpHeaders headers = getCommonHeaders("Get active users created after a specific date");
+        return users != null
+                ? new ResponseEntity<>(users, headers, HttpStatus.OK)
+                : new ResponseEntity<>(headers, HttpStatus.NOT_FOUND);
+    }
+    // TERMINAR!!
+
+    @GetMapping("/email/{email}")
+    public ResponseEntity<User> findByEmail(@PathVariable String email) {
+        return userService.findByEmail(email)
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+
+    @GetMapping("/username/{userName}")
+    public ResponseEntity<User> findByUserName(@PathVariable String userName) {
+        return userService.findByUserName(userName)
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    @GetMapping("/count")
+    public ResponseEntity<Integer> countUsers() {
+        return ResponseEntity.ok(userService.countUsers());
     }
 
     private HttpHeaders getCommonHeaders(String description) {
