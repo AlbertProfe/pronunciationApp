@@ -23,7 +23,7 @@ public class UserController {
     
     @GetMapping
     public ResponseEntity<List<User>> getAllUsers() {
-        List<User> user = userService.getAllUsers();
+        List<User> users = userService.getAllUsers();
         HttpHeaders headers = getCommonHeaders("Get all users");
 
         return !user.isEmpty()
@@ -63,7 +63,7 @@ public class UserController {
         
         if (userService.existsById(idToDelete)) {
             userService.deleteUser(idToDelete);
-            return new ResponseEntity<>("User deleted", headers, HttpsStatus.OK);
+            return new ResponseEntity<>("User deleted", headers, HttpStatus.OK);
         } else {
             return new ResponseEntity<>("User not found", headers, HttpStatus.NOT_FOUND);
         }
