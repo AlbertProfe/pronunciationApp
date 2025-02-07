@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "a258b126-d42c-44b4-812a-1fea923355d6",
+		"name": "TestingFrontend_PronunciationApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41296624"
+	},
+	"item": [
+		{
+			"name": "GetAllWords",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5173",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5173"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding a new word",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"id\": 49,\n      \"word\": \"machine\",\n      \"pronunciation\": \"/məˈʃiːn/\",\n      \"definition\": \"apparatus using mechanical power\",\n      \"origin\": \"Middle French from Latin machina, which in turn derives from the Greek\",\n      \"isActive\": true,\n      \"addedToDB\": \"2025-01-28\",\n      \"Charnumbers\": 7\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5173/api/wordsPedro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5173",
+					"path": [
+						"api",
+						"wordsPedro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update an existing word by id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5173/api/wordsPedro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5173",
+					"path": [
+						"api",
+						"wordsPedro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an existing word by id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5173/api/wordsPedro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5173",
+					"path": [
+						"api",
+						"wordsPedro"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
