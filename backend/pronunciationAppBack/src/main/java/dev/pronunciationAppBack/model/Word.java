@@ -11,7 +11,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "WORDS")
+@Table(name = "Words")
 public class Word {
 
     @Id

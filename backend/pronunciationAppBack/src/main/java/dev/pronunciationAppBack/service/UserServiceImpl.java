@@ -95,7 +95,7 @@ public class UserServiceImpl implements UserService {
             }
             if (userDetails.getCreatedAt() != null){
                 user.setCreatedAt(userDetails.getCreatedAt());
-        }
+            }
             return userRepository.save(user);
         }
         return null;

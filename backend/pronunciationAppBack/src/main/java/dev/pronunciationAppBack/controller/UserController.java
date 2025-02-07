@@ -90,6 +90,7 @@ public class UserController {
 
     @GetMapping("/created-after")
     public ResponseEntity<List<User>> getUsersCreatedAtAfter(@RequestParam LocalDate date) {
+
         List<User> users = userService.getUsersCreatedAtAfter(date);
         HttpHeaders headers = getCommonHeaders("Get users created after a specific date");
         return users.isEmpty() ? ResponseEntity.noContent().headers(headers).build()

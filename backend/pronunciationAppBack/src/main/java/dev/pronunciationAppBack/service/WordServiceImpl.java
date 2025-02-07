@@ -51,7 +51,6 @@ public class WordServiceImpl implements WordService {
             if (wordDetails.getLevel() != 0){
                 word.setLevel(wordDetails.getLevel());
             }
-
             return wordRepository.save(word);
         }
         return null;
