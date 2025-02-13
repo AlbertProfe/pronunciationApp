@@ -2,22 +2,25 @@ import './App.css'
 import Cards from "./Cards.jsx"
 import UsersList from './users.jsx';
 import Header from "./Header.jsx";
+import About from './about.jsx'
+import layout from './Layout.jsx';
+import nopage from './noPage.jsx';
+import Practice from './Practice.jsx';
+import { Route } from '@mui/icons-material';
 
-function App() {
+export default function App() {
 
+return(
+  <BrowserRouter>
+  <Routes>
+    <Route path="/" element= {<Layout/>}>
+    <Route index element={<Home/>} />
+    <Route path="practice" element= {<Practive />} />
+    <Route path = "about" element = {<About />} />
+    <Route path= "*" element= {<noPage/>}/>
+    </Route>
+    </Routes>
+    </BrowserRouter>
+);
 
-  return (
-    <>
-      <UsersList />
-      <h2>Welcome to PronunciationApp</h2>
-
-      <Header />
-      
-
-      <Cards />
-      
-    </>
-  );
-}
-
-export default App
+};
