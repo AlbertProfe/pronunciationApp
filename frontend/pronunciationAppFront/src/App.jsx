@@ -7,6 +7,7 @@ import NoPage from "./pages/NoPage.jsx";
 import Practice from "./pages/Practice.jsx";
 import Register from "./pages/Register.jsx";
 import Login from "./pages/Login.jsx";
+import Find from "./pages/Find.jsx";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const theme = createTheme();
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="about" element={<About />} />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
+            <Route path="find" element={<Find />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>

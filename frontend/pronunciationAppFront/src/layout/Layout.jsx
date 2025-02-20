@@ -34,6 +34,9 @@ export default function Layout() {
           <Button component={StyledLink} to="/practice">
             Practice
           </Button>
+          <Button component={StyledLink} to="/find">
+            Find
+          </Button>
           <Button component={StyledLink} to="/about">
             About
           </Button>

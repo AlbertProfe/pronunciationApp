@@ -9,9 +9,9 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
   paper: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(0),
     textAlign: "center",
-    color: theme.palette.text.secondary,
+    color: theme.palette.text.primary,
   },
 }));
 
@@ -26,7 +26,7 @@ const MapComponent = () => {
       </Typography>
       <MapContainer
         center={position}
-        zoom={13}
+        zoom={15}
         scrollWheelZoom={false}
         className={classes.mapContainer}
       >
