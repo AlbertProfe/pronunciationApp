@@ -37,6 +37,9 @@ export default function Layout() {
           <Button component={StyledLink} to="/about">
             About
           </Button>
+          <Button component={StyledLink} to="/myprofile">
+            MyProfile
+          </Button>
         </Toolbar>
       </AppBar>
       <Container sx={{ color: "#F0F4F8" }}>
