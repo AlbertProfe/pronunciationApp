@@ -1,0 +1,45 @@
+.word-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title-container {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 24px;
+}
+
+.sort-button {
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.sort-button:hover {
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+.word-card {
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out !important;
+}
+
+.word-card:hover {
+    transform: translate(5px, -5px);
+    box-shadow: "0 6px 8px rgba(0, 0, 0, 0.15)";
+}
+
+.card-content-text{
+    color: black;
+}
+
+.pronunciation {
+    font-style: italic !important;
+}
+
+.difficulty {
+    font-weight: bold !important;
+}
