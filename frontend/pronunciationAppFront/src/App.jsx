@@ -1,12 +1,15 @@
 import './App.css'
 import Cards from "./Cards.jsx"
-import Header from "./Hero.jsx";
+import Header from "./Header.jsx";
+import UserAvatar from './UserAvatar.jsx';
 
-function App() {
+export default function App() {
 
 
   return (
     <>
+      <UserAvatar />
+      
       <h2>Welcome to PronunciationApp</h2>
 
       <Header />
@@ -15,5 +18,3 @@ function App() {
     </>
   );
 }
-
-export default App
