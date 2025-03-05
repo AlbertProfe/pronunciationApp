@@ -3,14 +3,11 @@
 ## Links
 
 - [Passing Props to a Component](https://react.dev/learn/passing-props-to-a-component)
-
 - [JavaScript in JSX with Curly Braces](https://react.dev/learn/javascript-in-jsx-with-curly-braces)
-
 - [accordion](https://github.com/AlbertProfe/pronunciationApp/blob/frontend-react/frontend/resources/react-dev/accordion.md)
-
 - [The problem with passing props](https://react.dev/learn/passing-data-deeply-with-context#the-problem-with-passing-props)
 
-## JSX: Basic Concepts and Syntax
+## JSX Concepts
 
 What is JSX?
 
@@ -18,13 +15,11 @@ What is JSX?
 - **Purpose**: It makes it easier to describe UI structures in a declarative way, blending markup and logic seamlessly.
 - **Not HTML**: JSX looks like HTML but gets compiled (via tools like Babel) into JavaScript function calls (e.g., `React.createElement`).
 
-Basic Concepts and Syntax: 
+Basic Concepts and Syntax
 
 #### 1. **Embedding in JavaScript**
 
-- JSX is written inside JavaScript files and must be enclosed in a function or return statement.
-
-- Example:
+- JSX is written inside JavaScript files and must be enclosed in a function or return statement. Example:
   
   ```jsx
   function MyComponent() {
@@ -57,9 +52,7 @@ Basic Concepts and Syntax:
 
 #### 3. **JavaScript Expressions with** `{}`
 
-- Use curly braces `{}` to embed JavaScript expressions inside JSX.
-
-- Examples:
+- Use curly braces `{}` to embed JavaScript expressions inside JSX. Examples:
   
   ```jsx
   const name = "Alice";
@@ -76,9 +69,7 @@ Basic Concepts and Syntax:
 
 - JSX attributes are written like HTML attributes but use **camelCase** (not kebab-case).
 
-- Values can be strings (in quotes) or JavaScript expressions (in `{}`).
-
-- Examples:
+- Values can be strings (in quotes) or JavaScript expressions (in `{}`). Examples:
   
   ```jsx
   <input type="text" placeholder="Enter text" />
@@ -98,9 +89,7 @@ Basic Concepts and Syntax:
 
 - Props (properties) are passed to components using attributes.
 
-- Use `{}` for non-string values (numbers, objects, etc.).
-
-- Example:
+- Use `{}` for non-string values (numbers, objects, etc.). Example:
   
   ```jsx
   <MyComponent title="Hello" count={42} />
@@ -116,9 +105,7 @@ Basic Concepts and Syntax:
 
 #### 6. **Children**
 
-- Content between opening and closing tags is passed as the `children` prop.
-
-- Example:
+- Content between opening and closing tags is passed as the `children` prop. Example:
   
   ```jsx
   <Section>
@@ -134,9 +121,7 @@ Basic Concepts and Syntax:
 
 #### 7. **Components**
 
-- Custom components start with an **uppercase letter** to distinguish them from HTML tags.
-
-- Example:
+- Custom components start with an **uppercase letter** to distinguish them from HTML tags. Example:
   
   ```jsx
   function Greeting() {
@@ -147,9 +132,7 @@ Basic Concepts and Syntax:
 
 #### 8. **Conditional Rendering**
 
-- Use JavaScript logic (e.g., `if`, ternary operators) inside `{}`.
-
-- Examples:
+- Use JavaScript logic (e.g., `if`, ternary operators) inside `{}`. Examples:
   
   ```jsx
   const isLoggedIn = true;
@@ -164,9 +147,7 @@ Basic Concepts and Syntax:
 
 - Use `{}` with `.map()` to render lists.
 
-- Add a `key` prop for each item to help React track elements.
-
-- Example:
+- Add a `key` prop for each item to help React track elements. Example:
   
   ```jsx
   const items = ["Apple", "Banana", "Orange"];
@@ -181,9 +162,7 @@ Basic Concepts and Syntax:
 
 #### 10. **Fragments**
 
-- Use `<></>` or `<React.Fragment>` to group elements without adding extra DOM nodes.
-
-- Example:
+- Use `<></>` or `<React.Fragment>` to group elements without adding extra DOM nodes. Example:
   
   ```jsx
   return (
@@ -196,9 +175,7 @@ Basic Concepts and Syntax:
 
 #### 11. **Comments**
 
-- Comments in JSX are written inside `{}` using JavaScript comment syntax.
-
-- Example:
+- Comments in JSX are written inside `{}` using JavaScript comment syntax. Example:
   
   ```jsx
   <div>
@@ -209,9 +186,7 @@ Basic Concepts and Syntax:
 
 #### 12. **Styling**
 
-- Inline styles use `style={{}}` with camelCase properties (not CSS strings).
-
-- Example:
+- Inline styles use `style={{}}` with camelCase properties (not CSS strings). Example:
   
   ```jsx
   <div style={{ backgroundColor: "blue", fontSize: "16px" }}>Styled</div>
@@ -234,6 +209,8 @@ Basic Concepts and Syntax:
 
 Let's work with an example: `level={1}`
 
+Let’s break this down step-by-step to clarify why `level={1}` is written this way in your React code, what kind of syntax it is, and why `level=1` isn’t used instead
+
 ```jsx
 export default function Page() {
   return (
@@ -245,16 +222,13 @@ export default function Page() {
 
 //.....
 
-
 <Section level={1}>
       <Heading >Title</Heading>
 ...
 </Section>
 ```
 
-> Let’s break this down step-by-step to clarify why `level={1}` is written this way in your React code, what kind of syntax it is, and why `level=1` isn’t used instead.
-
-**What is `level={1}`?**
+#### What is `level={1}`?
 
 In JSX code, `level={1}` is a `prop` (<mark>short for "property"</mark>) being passed to the `Section` component. Props are how you pass data from a parent component to a child component in React. Here, the `Section` component is receiving a prop named `level` with the value `1`.
 
@@ -262,7 +236,7 @@ The `{}` syntax in `level={1}` is part of `JSX`, a syntax extension for JavaScri
 
 > The curly braces tell JSX that what’s inside them is a JavaScript expression, not a string or static value.
 
-**Why use `{}` instead of just `level=1`?**
+#### Why use `{}` instead of just `level=1`?
 
 In JSX, when you write something like `level=1` (without curly braces), it’s interpreted as a <mark>string literal</mark> `"1"`, not the number `1`. This is because JSX attributes without `{}` <mark>are treated as strings</mark>, similar to how HTML attributes work. For example:
 
@@ -275,7 +249,7 @@ In JSX, when you write something like `level=1` (without curly braces), it’s i
 
 > This distinction matters because the `Section` component might expect `level` to be a number (not a string) to perform some logic, like setting an HTML heading level (`<h1>`, `<h2>`, etc.).
 
-**What kind of notation or syntax is this?**
+#### What kind of notation or syntax is this?
 
 This is <mark>JSX syntax</mark>, which looks like HTML but is actually a way to write JavaScript expressions that describe UI components in React. The `{}` notation specifically allows you to embed JavaScript expressions inside JSX. For example:
 
@@ -285,7 +259,7 @@ This is <mark>JSX syntax</mark>, which looks like HTML but is actually a way to 
 
 The curly braces act as a bridge between the JSX markup and the JavaScript logic.
 
-**Why not just `level=1` since it’s a single number?**
+#### Why not just `level=1` since it’s a single number?
 
 As mentioned, `level=1` isn’t valid JSX syntax. JSX requires that attributes either:
 
@@ -294,7 +268,7 @@ As mentioned, `level=1` isn’t valid JSX syntax. JSX requires that attributes e
 
 Even though `1` is just a single number, JSX doesn’t make an exception for numbers. The `{}` rule applies consistently to all non-string values (numbers, booleans, objects, etc.). This design choice in JSX ensures clarity and avoids ambiguity when mixing static strings with dynamic values.
 
-**How does it work in our code?**
+#### How does it work in our code?
 
 In our example:
 
@@ -338,11 +312,11 @@ With this implementation:
 
 The `{1}` ensures `level` is passed as a number, which the component can use in its logic.
 
-### Props and literal objects
+## Props and literal objects
 
 Let’s dive into why the `Section` component uses `{ level, children }` with curly braces instead of simple parentheses `(level, children)` for its parameters. This is about JavaScript syntax and React conventions, so let’s break it down.
 
-**What’s Happening in the Code?**
+#### What’s happening in the Code?
 
 In our example:
 
@@ -359,52 +333,54 @@ export default function Section({ level, children }) {
 
 The `Section` component is a functional React component. The `{ level, children }` syntax is the parameter definition for this function. It uses <mark>object destructuring</mark>, a feature of JavaScript (**introduced in ES6**), to extract specific properties from an object passed as an argument.
 
-**Why `{ level, children }` Instead of `(level, children)`?**
+#### Why `{ level, children }` Instead of `(level, children)`?
 
-1. React Passes Props as a Single Object
-   
-   In React, when a component is called (e.g., `<Section level={1}>`), it doesn’t receive multiple arguments like a typical function call `myFunction(arg1, arg2)`. 
-   
-   Instead, <mark>React passes a single `props` object containing all the props.</mark> 
-   
-   For example:
-   
-   - `<Section level={1}>` → React internally calls `Section({ level: 1, children: <Heading>Title</Heading> })`.
-   
-   - The `props` object might look like:
-     
-     - ```js
-       {
-         level: 1,
-         children: <Heading>Title</Heading>
-       }
-       ```
+##### 1. React Passes Props as a Single Object
+
+In React, when a component is called (e.g., `<Section level={1}>`), it doesn’t receive multiple arguments like a typical function call `myFunction(arg1, arg2)`. 
+
+Instead, <mark>React passes a single `props` object containing all the props.</mark> 
+
+For example:
+
+- `<Section level={1}>` → React internally calls `Section({ level: 1, children: <Heading>Title</Heading> })`.
+
+- The `props` object might look like:
+  
+  - ```js
+    {
+      level: 1,
+      children: <Heading>Title</Heading>
+    }
+    ```
 
 > So, the component function receives **one argument** (the `props` object), not two separate arguments like `level` and `children`.
 
-2. Destructuring the Props Object
+##### 2. Destructuring the Props Object
 
-    If we wrote the component without destructuring, it would look like this:
+If we wrote the component *without destructuring*, it would look like this:
 
 ```jsx
   export default function Section(props) {
-  const Tag = `h${props.level}`;
+      const Tag = `h${props.level}`;
   return <Tag>{props.children}</Tag>;
 }
 ```
 
-Here, `props` is the single object argument, and you access `level` and `children` as properties (\`props.level\`, `props.children`). This works fine, but it’s a bit verbose because you have to keep typing `props.` every time.
+Here, `props` is the <mark>single object argument</mark>, and we access `level` and `children` as **properties** (`props.level`, props.children). 
 
-Using <mark>object destructuring</mark> with `{ level, children }`, we can directly extract `level` and `children` from the `props` object in the function signature, making the code cleaner and more concise:
+> This works fine, but it’s a bit verbose because we have to keep typing props. every time.
+
+Using object <mark>destructuring</mark> with `{ level, children }`, we can directly extract `level` and `children` from the **props** object in the function <mark>signature</mark>, making the code cleaner and more concise:
 
 ```jsx
-export default function Section({ level, children }) {
-  const Tag = `h${level}`;
-  return <Tag>{children}</Tag>;
+ export default function Section({ level, children }) {
+    const Tag = `h${level}`;
+ return <Tag>{children}</Tag>;
 }
 ```
 
-- `{ level, children }` tells JavaScript: "Take the `props` object I’m given and pull out the `level` and `children` properties as variables."
+- `{ level, children }` tells JavaScript: "*Take the `props` object I’m given and pull out the `level` and `children` properties as variables*."
 
 - it’s equivalent to:
   
@@ -416,7 +392,8 @@ export default function Section({ level, children }) {
     return <Tag>{children}</Tag>;
     }
     ```
-3. Why Not `(level, children)`?
+
+##### 3. Why Not `(level, children)`?
 
 If we tried to write it as:
 
@@ -427,28 +404,32 @@ return <Tag>{children}</Tag>;
 }
 ```
 
-> This would **not work**i n React because React doesn’t call the component with two separate arguments (\`Section(1, <Heading>Title</Heading>)\`). It calls it with one object (\`Section({ level: 1, children: <Heading>Title</Heading> })\`). If you used `(level, children)`, JavaScript would treat `level` as the entire `props` object and `children` as undefined, leading to errors:
+> This would **not work**i n React because React doesn’t call the component with two separate arguments (\`Section(1, <Heading>Title</Heading>)\`).
+> 
+> It calls it with one object (\`Section({ level: 1, children: <Heading>Title</Heading> })\`).
+> 
+> If you used `(level, children)`, JavaScript would treat `level` as the entire `props` object and `children` as undefined, leading to errors:
 
-\- `level` would be `{ level: 1, children: <Heading>Title</Heading> }`.
-
-\- `children` would be `undefined`.
+- `level` would be `{ level: 1, children: <Heading>Title</Heading> }`.
+- `children` would be `undefined`.
 
 So, `(level, children)` assumes a function signature with two parameters, but React’s component system doesn’t match that expectation.
 
-**Why Curly Braces `{}` Specifically?**
+## Summary
 
-The curly braces in `{ level, children }` are the syntax f**or object destructuring** in JavaScript. They indicate that you’re pulling specific properties (`level` and `children`) out of the object passed to the function. This is different from:
+#### Why Curly Braces `{}` Specifically?
+
+The curly braces in `{ level, children }` are the syntax **for object destructuring** in JavaScript. 
+
+They indicate that you’re pulling specific properties (`level` and `children`) out of the object passed to the function. This is different from:
 
 - Parentheses `()`: Used for function parameters or grouping expressions.
-
 - Curly braces `{}` in JSX: Used to embed JavaScript expressions (e.g., `level={1}`).
 
-**Why Is This a React Convention?**
+#### Why Is This a React Convention?
 
 Using `{ level, children }` is a common practice in React because:
 
-1\. Clarity: It immediately shows which props the component expects.
-
-2\. Conciseness: Avoids repetitive `props.` references.
-
-3\. Consistency: Matches how React delivers props as an object.
+1. <mark>Clarity</mark>: It immediately shows which props the component expects.
+2. <mark>Conciseness</mark>: Avoids repetitive props. references.
+3. <mark>Consistency</mark>: Matches how React delivers props as an object.
