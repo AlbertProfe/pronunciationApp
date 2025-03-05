@@ -26,7 +26,7 @@
 
 - [The render tree](https://react.dev/learn/understanding-your-ui-as-a-tree#the-render-tree)
 
-### Adding interactivit
+### Adding interactivity
 
 - [Reading props in event handlers](https://react.dev/learn/responding-to-events#reading-props-in-event-handlers)
 
@@ -48,7 +48,7 @@
 
 - [Thinking about UI declaratively](https://react.dev/learn/reacting-to-input-with-state#thinking-about-ui-declaratively)
 
-- [Principles for structuring state](## Thinking about UI declaratively)
+- [Principles for structuring state](https://react.dev/learn/choosing-the-state-structure#principles-for-structuring-state)
 
 - [Sharing State Between Components](https://react.dev/learn/sharing-state-between-components)
 
